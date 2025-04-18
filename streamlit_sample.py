@@ -129,6 +129,6 @@ with st.expander("🔍 General Search Guidelines", expanded=False):
 - **Check** the PDF version for notes like “retracted” or footnotes.  
 - **Search** the DOI on Google Scholar or the publisher site to confirm access.  
 - **Note** any errata or corrigenda entries.
-    ""
+    """
 )
 
