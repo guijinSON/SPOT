@@ -34,13 +34,11 @@ with left_col:
     st.markdown(f"**DOI/arXiv ID:** {row['doi/arxiv_id']}")
     st.markdown(f"**Source:** {row['source']}")
     st.markdown("**GPT‑4 Summary:**")
-    # preserve line breaks in summary
     st.markdown(
         f"<div style='white-space: pre-wrap; line-height:1.5;'>{row['gpt4-summ']}</div>",
         unsafe_allow_html=True
     )
 
-    # — Contextual Guidelines ———
     source_lower = str(row['source']).lower()
     if 'pubpeer' in source_lower:
         st.markdown("**PubPeer Search Guidelines:**")
@@ -71,27 +69,31 @@ with right_col:
         "1. Have the authors publicly acknowledged this error?",
         ["Yes", "No", "Uncertain"]
     )
+    self_contained = st.radio(
+        "2. Can this error be identified by examining only the paper’s content (figures, tables, equations, etc.) without external references?",
+        ["Yes", "No"]
+    )
     is_severe = st.radio(
-        "2. Is this error severe?",
+        "3. Is this error severe?",
         ["Yes", "No"]
     )
     accessible = st.radio(
-        "3. Is the paper still accessible at its DOI/arXiv link?",
+        "4. Is the paper still accessible at its DOI/arXiv link?",
         ["Yes", "No"]
     )
     category = st.selectbox(
-        "4. Which category best describes the error?",
+        "5. Which category best describes the error?",
         ["Figure duplication", "Data inconsistency", "Equation typo",
          "Methodological issue", "Other"]
     )
     if category == "Other":
         category = st.text_input("⮕ Please specify your own category:")
     error_count = st.number_input(
-        "5. How many distinct errors are reported?",
+        "6. How many distinct errors are reported?",
         min_value=1, max_value=20, step=1
     )
     summary = st.text_area(
-        "6. Summarize the error(s) in your own words:",
+        "7. Summarize the error(s) in your own words:",
         height=120
     )
 
@@ -103,6 +105,7 @@ with right_col:
             'source': row['source'],
             'gpt4-summ': row['gpt4-summ'],
             'author_ack': error_ack,
+            'self_contained': self_contained,
             'severe': is_severe,
             'accessible': accessible,
             'category': category,
@@ -126,5 +129,6 @@ with st.expander("🔍 General Search Guidelines", expanded=False):
 - **Check** the PDF version for notes like “retracted” or footnotes.  
 - **Search** the DOI on Google Scholar or the publisher site to confirm access.  
 - **Note** any errata or corrigenda entries.
-    """
+    ""
 )
+
