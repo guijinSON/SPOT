@@ -168,13 +168,3 @@ with right_col:
             index=False
         )
         st.success("✅ All annotations saved.")
-
-with st.expander("🔍 General Search Guidelines", expanded=False):
-    general_guidelines = """
-- **Start** at the paper’s PubPeer or journal page.
-- **Look** for any author replies or updates.
-- **Check** the PDF version for notes like “retracted” or footnotes.
-- **Search** the DOI on Google Scholar or the publisher site to confirm access.
-- **Note** any errata or corrigenda entries.
-"""
-    st.code(general_guidelines, language='text')
