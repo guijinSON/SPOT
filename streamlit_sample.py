@@ -9,25 +9,41 @@ st.set_page_config(page_title="Annotation Platform", layout="wide")
 # ——— CONFIG ———
 DATA_PATH = 'retracted_machine_filtered_final.csv'
 ANNOTATIONS_PATH = 'annotations.csv'
+FLAGS_PATH = 'flags.csv'
 
 # ——— LOAD DATA ———
 @st.cache_data
 def load_data():
     return pd.read_csv(DATA_PATH)
 
-df = load_data()
+df_full = load_data()
+
 # ——— FILTER BY ASSIGNEE ———
-assignees = sorted(df['assigned_to'].dropna().unique())
+assignees = sorted(df_full['assigned_to'].dropna().unique())
 selected_assignee = st.sidebar.selectbox("Select Assignee:", assignees)
-# filter dataframe to only those assigned to the selected user
-df = df[df['assigned_to'] == selected_assignee]
+# filter and reset index for positional indexing
+df = df_full[df_full['assigned_to'] == selected_assignee].reset_index(drop=True)
 num_papers = len(df)
 
 # ——— STATE: CURRENT ROW ———
 if 'idx' not in st.session_state:
     st.session_state.idx = 0
 
-# ——— SIDEBAR: NAVIGATION & PROGRESS ———
+# ——— SIDEBAR: NAVIGATION: Previous/Next & DOI Jump ———
+if st.sidebar.button('← Previous'):
+    st.session_state.idx = max(0, st.session_state.idx - 1)
+if st.sidebar.button('Next →'):
+    st.session_state.idx = min(num_papers - 1, st.session_state.idx + 1)
+
+doi_input = st.sidebar.text_input("Jump to DOI:", "")
+if st.sidebar.button("Go to DOI"):
+    dois = df['doi/arxiv_id'].tolist()
+    if doi_input in dois:
+        st.session_state.idx = dois.index(doi_input)
+    else:
+        st.sidebar.error("DOI not found for this assignee.")
+
+# ——— SIDEBAR: PROGRESS ———
 st.sidebar.header("📋 Navigation & Progress")
 completed = 0
 if os.path.exists(ANNOTATIONS_PATH):
@@ -39,17 +55,17 @@ if os.path.exists(ANNOTATIONS_PATH):
 st.sidebar.write(f"Progress: **{completed}** annotated / **{num_papers}** total")
 st.sidebar.progress(completed / num_papers if num_papers else 0)
 
-# ——— PAPER SELECTION ———
-# titles = df['title'].tolist()
-# selection = st.sidebar.radio(
-#     "Select Paper:",
-#     options=titles,
-#     index=st.session_state.idx
-# )
-# if st.sidebar.button('Go'):
-#     st.session_state.idx = titles.index(selection)
-# if st.sidebar.button('🔀 Shuffle Sample'):
-#     st.session_state.idx = random.randint(0, num_papers - 1)
+# ——— PAPER SELECTION (for manual override) ———
+titles = df['title'].tolist()
+selection = st.sidebar.radio(
+    "Select Paper:",
+    options=titles,
+    index=st.session_state.idx
+)
+if st.sidebar.button('Go'):
+    st.session_state.idx = titles.index(selection)
+if st.sidebar.button('🔀 Shuffle Sample'):
+    st.session_state.idx = random.randint(0, num_papers - 1)
 
 row = df.iloc[st.session_state.idx]
 
@@ -70,7 +86,7 @@ elif any(key in source_lower for key in ['withdrarxiv', 'withdraw_arxiv', 'arxiv
     abs_url = f"https://arxiv.org/abs/{row['doi/arxiv_id'].strip()}"
     guidelines = f"""
 1. Visit the abstract page: {abs_url}
-2. Review all comments displayed.
+2. Read the comment.
 3. Assess whether the identified error(s) critically affect the paper’s conclusions.
 4. Confirm that the PDF version remains accessible.
 """
@@ -83,6 +99,7 @@ left_col, right_col = st.columns([2, 3])
 with left_col:
     st.markdown(f"### 📄 {row['title']}")
     st.markdown(f"**DOI/arXiv ID:** {row['doi/arxiv_id']}")
+    st.markdown(f"**Assigned To:** {selected_assignee}")
     st.markdown(f"**Source:** {row['source']}")
     st.markdown("**GPT‑4 Summary:**")
     st.markdown(
@@ -118,7 +135,7 @@ with right_col:
             ["Yes", "No"],
             key=f"sev_{i}" 
         )
-        # Updated file handling for error PDF
+        # File-handling: error version or reconstruction
         error_version_accessible = st.radio(
             f"4. Is the version containing this error still accessible?",
             ["Yes", "No"],
@@ -132,10 +149,9 @@ with right_col:
                 key=f"file_error_{i}"
             )
             if pdf_file is not None:
-                uploads_dir = "uploaded_pdfs"
-                os.makedirs(uploads_dir, exist_ok=True)
+                os.makedirs("uploaded_pdfs", exist_ok=True)
                 safe_id = row['doi/arxiv_id'].replace('/', '_')
-                file_path = os.path.join(uploads_dir, f"{safe_id}_error{i+1}.pdf")
+                file_path = f"uploaded_pdfs/{safe_id}_error{i+1}.pdf"
                 with open(file_path, "wb") as f:
                     f.write(pdf_file.getbuffer())
                 error_pdf_path = file_path
@@ -147,21 +163,21 @@ with right_col:
             )
             if recon_possible == "Yes":
                 pdf_file = st.file_uploader(
-                    f"📄 Upload the newer PDF for error #{i+1}:",
+                    f"📄 Upload the newer PDF (reconstructed) for error #{i+1}:",
                     type=["pdf"],
                     key=f"file_recon_{i}"
                 )
                 if pdf_file is not None:
-                    uploads_dir = "uploaded_pdfs"
-                    os.makedirs(uploads_dir, exist_ok=True)
+                    os.makedirs("uploaded_pdfs", exist_ok=True)
                     safe_id = row['doi/arxiv_id'].replace('/', '_')
-                    file_path = os.path.join(uploads_dir, f"{safe_id}_recon{i+1}.pdf")
+                    file_path = f"uploaded_pdfs/{safe_id}_recon{i+1}.pdf"
                     with open(file_path, "wb") as f:
                         f.write(pdf_file.getbuffer())
                     error_pdf_path = file_path
 
         categories = [
-            "Figure duplication", "Data inconsistency", "Figure-Text Inconsistency", "proof/equation", "statistical reporting error", "reagent identity error","Other"
+            "Figure duplication", "Data inconsistency", "Figure-Text Inconsistency", "proof/equation",
+            "statistical reporting error", "reagent identity error", "Other"
         ]
         if error_count > 1:
             chosen = st.multiselect(
@@ -186,9 +202,10 @@ with right_col:
             height=120,
             key=f"sum_{i}"
         )
+
         annotations.append({
             'title': row['title'],
-            'doi/arXiv_id': row['doi/arxiv_id'],
+            'doi/arxiv_id': row['doi/arxiv_id'],
             'assigned_to': selected_assignee,
             'author_ack': error_ack,
             'self_contained': self_contained,
@@ -200,6 +217,14 @@ with right_col:
             'summary': summary
         })
 
+    # ——— Flag Issue Button ———
+    if st.button('⚑ Flag Issue'):
+        flag_entry = {'doi/arxiv_id': row['doi/arxiv_id'], 'assigned_to': selected_assignee}
+        write_flag_header = not os.path.exists(FLAGS_PATH)
+        pd.DataFrame([flag_entry]).to_csv(FLAGS_PATH, mode='a', header=write_flag_header, index=False)
+        st.success("🚩 Instance flagged for review.")
+
+    # ——— Save Annotations Button ———
     if st.button('💾 Save All Annotations'):
         write_header = not os.path.exists(ANNOTATIONS_PATH)
         pd.DataFrame(annotations).to_csv(
