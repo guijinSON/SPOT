@@ -16,38 +16,66 @@ def load_data():
     return pd.read_csv(DATA_PATH)
 
 df = load_data()
+print(df.columns)
+# ——— FILTER BY ASSIGNEE ———
+assignees = sorted(df['assigned_to'].dropna().unique())
+selected_assignee = st.sidebar.selectbox("Select Assignee:", assignees)
+# filter dataframe to only those assigned to the selected user
+df = df[df['assigned_to'] == selected_assignee]
 num_papers = len(df)
 
-def get_completed():
-    if os.path.exists(ANNOTATIONS_PATH):
-        try:
-            return len(pd.read_csv(ANNOTATIONS_PATH))
-        except pd.errors.ParserError:
-            with open(ANNOTATIONS_PATH, 'r', encoding='utf-8', errors='ignore') as f:
-                return sum(1 for _ in f) - 1
-    return 0
-
-# ——— SIDEBAR: NAVIGATION & PROGRESS ———
-st.sidebar.header("📋 Navigation & Progress")
-completed = get_completed()
-st.sidebar.write(f"Progress: **{completed}** annotated / **{num_papers}** total")
-st.sidebar.progress(completed / num_papers if num_papers else 0)
-
-titles = df['title'].tolist()
-selection = st.sidebar.radio(
-    "Select Paper:",
-    options=titles,
-    index=st.session_state.get('idx', 0)
-)
-if st.sidebar.button('Go'):
-    st.session_state.idx = titles.index(selection)
-if st.sidebar.button('🔀 Shuffle Sample'):
-    st.session_state.idx = random.randint(0, num_papers - 1)
-
+# ——— STATE: CURRENT ROW ———
 if 'idx' not in st.session_state:
     st.session_state.idx = 0
 
+# ——— SIDEBAR: NAVIGATION & PROGRESS ———
+st.sidebar.header("📋 Navigation & Progress")
+completed = 0
+if os.path.exists(ANNOTATIONS_PATH):
+    try:
+        completed = len(pd.read_csv(ANNOTATIONS_PATH))
+    except pd.errors.ParserError:
+        with open(ANNOTATIONS_PATH, 'r', encoding='utf-8', errors='ignore') as f:
+            completed = sum(1 for _ in f) - 1
+st.sidebar.write(f"Progress: **{completed}** annotated / **{num_papers}** total")
+st.sidebar.progress(completed / num_papers if num_papers else 0)
+
+# ——— PAPER SELECTION ———
+# titles = df['title'].tolist()
+# selection = st.sidebar.radio(
+#     "Select Paper:",
+#     options=titles,
+#     index=st.session_state.idx
+# )
+# if st.sidebar.button('Go'):
+#     st.session_state.idx = titles.index(selection)
+# if st.sidebar.button('🔀 Shuffle Sample'):
+#     st.session_state.idx = random.randint(0, num_papers - 1)
+
 row = df.iloc[st.session_state.idx]
+
+# ——— TOP: DYNAMIC GUIDELINES ———
+source_lower = str(row['source']).lower()
+if 'pubpeer' in source_lower:
+    st.markdown("**PubPeer Search Guidelines:**")
+    guidelines = """
+1. Search for the DOI on [PubPeer](https://pubpeer.com/).
+2. Read all comment threads.
+3. Check whether the authors responded.
+4. Assess whether the identified error(s) critically affect the paper’s conclusions.
+5. Confirm that the PDF version remains accessible.
+"""
+    st.code(guidelines, language='text')
+elif any(key in source_lower for key in ['withdrarxiv', 'withdraw_arxiv', 'arxiv']):
+    st.markdown("**arXiv Withdrawal Guidelines:**")
+    abs_url = f"https://arxiv.org/abs/{row['doi/arxiv_id'].strip()}"
+    guidelines = f"""
+1. Visit the abstract page: {abs_url}
+2. Review all comments displayed.
+3. Assess whether the identified error(s) critically affect the paper’s conclusions.
+4. Confirm that the PDF version remains accessible.
+"""
+    st.code(guidelines, language='text')
 
 # ——— LAYOUT: TWO COLUMNS ———
 left_col, right_col = st.columns([2, 3])
@@ -62,28 +90,6 @@ with left_col:
         f"<div style='white-space: pre-wrap; line-height:1.5;'>{row['gpt4-summ']}</div>",
         unsafe_allow_html=True
     )
-
-    source_lower = str(row['source']).lower()
-    if 'pubpeer' in source_lower:
-        st.markdown("**PubPeer Search Guidelines:**")
-        guidelines = """
-1. Search for the paper title or DOI on [PubPeer](https://pubpeer.com/).
-2. Review all comment threads.
-3. Look for any author responses.
-4. Assess whether the identified error(s) critically affect the paper’s conclusions.
-5. Confirm that the PDF version remains accessible.
-"""
-        st.code(guidelines, language='text')
-    elif any(key in source_lower for key in ['withdrarxiv', 'withdraw_arxiv', 'arxiv']):
-        st.markdown("**arXiv Withdrawal Guidelines:**")
-        abs_url = f"https://arxiv.org/abs/{row['doi/arxiv_id'].strip()}"
-        guidelines = f"""
-1. Visit the abstract page: {abs_url}
-2. Review all comments displayed.
-3. Assess whether the identified error(s) critically affect the paper’s conclusions.
-4. Confirm that the PDF version remains accessible.
-"""
-        st.code(guidelines, language='text')
 
 # — Right: Annotation Section ———
 with right_col:
@@ -100,27 +106,63 @@ with right_col:
         st.subheader(f"Error #{i+1}")
         error_ack = st.radio(
             f"1. Have the authors publicly acknowledged this error?",
-            ["Yes", "No", "Uncertain"],
+            ["Yes", "No"],
             key=f"ack_{i}" 
         )
         self_contained = st.radio(
-            f"2. Can this error be identified by examining only the paper’s content?",
+            f"2. Can this error be identified by examining only the paper’s content? (Is the error self-contained?)",
             ["Yes", "No"],
             key=f"self_{i}" 
         )
         is_severe = st.radio(
-            f"3. Is this error severe?",
+            f"3. Is the error critical enough to (partially) challenge or doubt the findings of the paper?",
             ["Yes", "No"],
             key=f"sev_{i}" 
         )
-        accessible = st.radio(
-            f"4. Is the paper still accessible at its DOI/arXiv link?",
+        # Updated file handling for error PDF
+        error_version_accessible = st.radio(
+            f"4. Is the version containing this error still accessible?",
             ["Yes", "No"],
-            key=f"acc_{i}" 
+            key=f"acc_{i}"
         )
+        error_pdf_path = ""
+        if error_version_accessible == "Yes":
+            pdf_file = st.file_uploader(
+                f"📄 Upload the original PDF (error version) for error #{i+1}:",
+                type=["pdf"],
+                key=f"file_error_{i}"
+            )
+            if pdf_file is not None:
+                uploads_dir = "uploaded_pdfs"
+                os.makedirs(uploads_dir, exist_ok=True)
+                safe_id = row['doi/arxiv_id'].replace('/', '_')
+                file_path = os.path.join(uploads_dir, f"{safe_id}_error{i+1}.pdf")
+                with open(file_path, "wb") as f:
+                    f.write(pdf_file.getbuffer())
+                error_pdf_path = file_path
+        else:
+            recon_possible = st.radio(
+                f"4b. Can this error be reconstructed from a newer version?",
+                ["Yes", "No"],
+                key=f"recon_{i}"
+            )
+            if recon_possible == "Yes":
+                pdf_file = st.file_uploader(
+                    f"📄 Upload the newer PDF for error #{i+1}:",
+                    type=["pdf"],
+                    key=f"file_recon_{i}"
+                )
+                if pdf_file is not None:
+                    uploads_dir = "uploaded_pdfs"
+                    os.makedirs(uploads_dir, exist_ok=True)
+                    safe_id = row['doi/arxiv_id'].replace('/', '_')
+                    file_path = os.path.join(uploads_dir, f"{safe_id}_recon{i+1}.pdf")
+                    with open(file_path, "wb") as f:
+                        f.write(pdf_file.getbuffer())
+                    error_pdf_path = file_path
+
         categories = [
-            "Figure duplication", "Data inconsistency", "Equation typo",
-            "Methodological issue", "Other"
+            "Figure duplication", "Data inconsistency", "Figure-Text Inconsistency", "proof/equation", "statistical reporting error", "reagent identity error","Other"
         ]
         if error_count > 1:
             chosen = st.multiselect(
@@ -141,19 +183,19 @@ with right_col:
             chosen = st.text_input(f"⮕ Specify category for error #{i+1}:", key=f"oth_{i}")
 
         summary = st.text_area(
-            f"7. Summarize error #{i+1}:",
+            f"7. Copy paste the sentence the author recognizes error #{i+1}:",
             height=120,
             key=f"sum_{i}"
         )
         annotations.append({
             'title': row['title'],
-            'doi/arxiv_id': row['doi/arxiv_id'],
-            'source': row['source'],
-            'gpt4-summ': row['gpt4-summ'],
+            'doi/arXiv_id': row['doi/arxiv_id'],
+            'assigned_to': selected_assignee,
             'author_ack': error_ack,
             'self_contained': self_contained,
             'severe': is_severe,
-            'accessible': accessible,
+            'error_version_accessible': error_version_accessible,
+            'error_pdf_path': error_pdf_path,
             'categories': chosen,
             'error_count': error_count,
             'summary': summary
