@@ -16,7 +16,6 @@ def load_data():
     return pd.read_csv(DATA_PATH)
 
 df = load_data()
-print(df.columns)
 # ——— FILTER BY ASSIGNEE ———
 assignees = sorted(df['assigned_to'].dropna().unique())
 selected_assignee = st.sidebar.selectbox("Select Assignee:", assignees)
