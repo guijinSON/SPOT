@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-parse_and_review.py
+process.py
 
 Parse a scientific PDF, embed key figures/tables as base‑64 images,
 call multiple LLM “reviewers,” and save every artifact in a tidy,
