@@ -23,7 +23,8 @@ DOI_COL          = 'doi/arxiv_id'          # single source of truth
 
 # ——— UTILS ———
 def safe_doi(doi: str) -> str:
-    return doi
+    """Return a filesystem‑safe version of a DOI / arXiv ID."""
+    return doi.replace('/', '_').replace(':', '_')
 
 def read_first_col(path: str) -> list[str]:
     if not os.path.exists(path):
