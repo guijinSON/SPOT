@@ -95,15 +95,3 @@ The processed artifacts land in `data/arXiv_2401.06455/`.
 - [Interdisciplinary & General Science](https://docs.google.com/spreadsheets/d/18CIonCPL3AEi44lstzkQpwqLMoYYy6r1FQOWPtKnmjo/edit?gid=0#gid=0)
 
 ---
-
-## Contributing
-Pull requests are welcome! Please open an issue first to discuss major changes.
-
-1. **Fork** → create a feature branch → **PR**.
-2. Run `pre-commit run --all-files` before pushing.
-3. Make sure all CI checks pass.
-
----
-
-© 2025 AI4S R2 Project. Licensed under the MIT License.
-
