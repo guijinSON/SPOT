@@ -189,13 +189,19 @@ with right_col:
             chosen = st.selectbox(
                 f"5. Category for error #{i+1}:",
                 options=categories,
-                key=f"cat_{i}" 
+                key=f"cat_{i}"
             )
         if isinstance(chosen, list) and "Other" in chosen:
             other_text = st.text_input(f"⮕ Specify category for error #{i+1}:", key=f"oth_{i}")
             chosen = [c for c in chosen if c != "Other"] + [other_text]
         elif chosen == "Other":
             chosen = st.text_input(f"⮕ Specify category for error #{i+1}:", key=f"oth_{i}")
+
+        # ——— New Question 6: Location of the error ———
+        location = st.text_input(
+            f"6. Section ID or Figure/Table number for error #{i+1}:",
+            key=f"loc_{i}"
+        )
 
         summary = st.text_area(
             f"7. Copy paste the sentence the author recognizes error #{i+1}:",
@@ -213,6 +219,7 @@ with right_col:
             'error_version_accessible': error_version_accessible,
             'error_pdf_path': error_pdf_path,
             'categories': chosen,
+            'location': location,
             'error_count': error_count,
             'summary': summary
         })
