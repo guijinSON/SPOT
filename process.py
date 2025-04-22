@@ -30,6 +30,9 @@ import mimetypes
 import os
 import shutil
 from pathlib import Path
+import time
+import litellm
+litellm._turn_on_debug()
 
 from llama_cloud_services import LlamaParse
 from openai import OpenAI
@@ -93,7 +96,7 @@ async def main(paper_path: str, doi: str) -> None:
 
         # Embed only figures/tables (filter by filename)
         for img in page.images:
-            if "picture" in img.name or "table" in img.name:
+            if "picture" in img.name:
                 img_file = img_dir / img.name
                 raw      = img_file.read_bytes()
                 b64      = base64.b64encode(raw).decode()
@@ -131,18 +134,29 @@ async def main(paper_path: str, doi: str) -> None:
         .message.content
     )
     
-    print("🤖 Sending content to Gemini 2.5 model...")
-    g25_resp = (
-        completion(
-            model="openrouter/google/gemini-2.5-pro-preview-03-25",
-            messages=[
-                {"role": "system", "content": llm_reviewer_template},
-                {"role": "user",   "content": content},
-            ],
-        )
-        .choices[0]
-        .message.content
-    )
+    print("🤖 Sending content to Gemini 2.5 model (up to 5 retries)...")
+    g25_resp = None
+    for attempt in range(1, 6):
+        try:
+            resp = completion(
+                model="openrouter/google/gemini-2.5-pro-preview-03-25",
+                messages=[
+                    {"role": "system", "content": llm_reviewer_template},
+                    {"role": "user",   "content": content},
+                ],
+            )
+            print(resp)
+            g25_resp = resp.choices[0].message.content
+            print(f"✅ Gemini 2.5 response received on attempt {attempt}")
+            break
+        except Exception as e:
+            print(f"❌ Attempt {attempt} failed: {e}")
+            if attempt < 5:
+                print("   Retrying in 2 seconds...")
+                time.sleep(2)
+            else:
+                print("   Max retries reached – setting Gemini response to None")
+
 
     # 6. Write one tidy metadata.json ----------------------------------------------
     print("💾 Writing metadata.json...")
