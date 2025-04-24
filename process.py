@@ -76,6 +76,7 @@ async def main(paper_path: str, doi: str) -> None:
         verbose=True,
         language="en",
         extract_layout=True,
+        skip_diagonal_text=True,
         parse_mode="parse_page_with_agent",
     )
     result = await parser.aparse(paper_path)
