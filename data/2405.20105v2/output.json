@@ -1,0 +1,2878 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "text": "                                                                      THE FIRST SUPERCONDUCTING FINAL FOCUS QUADRUPOLE\n                                                                               PROTOTYPE OF THE FCC-ee STUDY\n\n                                                                A. Thabuis, M. Koratzinos, G. Kirby, M. Liebsch, C. Petrone\n                                                           European Organization for Nuclear Research (CERN), Geneva, Switzerland\n\nAbstract                                                         strator were initially conducted at room temperature (i.e.\n     A single aperture Canted-Cosine-Theta (CCT) quadrupole      warm) [6] and are now presented at cryogenic temperatures\nmagnet, made of NbTi superconductors, has been developed         (i.e. cold) to assess superconducting magnet performance\nfor the final focus region of the FCC-ee study. The conduc-      accurately. The cold tests were conducted in Nov. 2023.\ntor layout is optimised to mitigate edge effects on one of                   WAX IMPREGNATION\nthe two sides of the magnet that typically lead to undesired\nhigher-order multipoles. Experimental results of a prototype,                The magnet impregnation process involves injecting hot\nincluding paraffin wax impregnation and cryogenic temper-        melted wax into the empty gaps between windings, which\nature measurements, are presented. The magnet exhibits no        then solidifies to ensure mechanical integrity. Paraffin wax\ntraining behaviour, surpassing the nominal current during        undergoes a liquid-solid phase transition at around 55 °C,\nthe initial ramp. Field quality is excellent, with higher-order  contracting by approximately 15% upon solidification. To\nmultipoles below 1 × 10−4 units, consistent with simulations\nand room temperature tests. These findings confirm the po-\ntential of superconducting CCT magnets to offer compact          Table 1: Specification Final-focus Quadrupole Demonstrator\nsolutions for applications demanding stringent field quality.        Aperture ⌀      40mm       Inductance          6.3 mH\n\n                 INTRODUCTION                                            𝑙𝑧       430mm     Joint R @600 A        130nΩ\n                                                                     Conductor       NbTi     𝐼nom per wire    764.5 A\n   The Future Circular Collider (FCC) study plans on build-      Winding pack      8 wires          𝐽𝑒           728A/mm2\ning a Higgs and electroweak factory through collisions of            Wire type    LHC cable       peak𝐵            2.95 T\npositrons and electrons (FCC-ee) [1]. Once these particles                     polyimid insul.\nhave been accelerated to their desired energy, strong so-        Wire ⌀ w/ insul.  0.970 mm      peak 𝛁 𝐵 ⋆       100T/m\ncalled final focus quadrupole magnets, focus the two indi-       Wire ⌀ w/o insul. 0.825 mm    ∫ 𝐵2 𝑑𝑧 at r=𝑟 0.315 T.m\nvidual beams around the so-called interaction region where    s/c to Cu ratio       0.526          𝑇nom            1.9 K\ncollisions occur.                                                    𝑙conductor     276m        𝑇margin           2.5 K\n       A Canted-Cosine-Theta (CCT) magnet topology has been\nproposed for the realization of the final-focus quadrupole,                       10 cm                          Oven\nfollowing a similar work done at CERN [2]. The conduc-       Connected to wax\ntor layout has been designed such that the edge effects are   upper reservoir\nreduced on one side and kept unchanged on the other side       To vacuum pump\nfor comparison. A prototype of shorter axial length was de-\nsigned and built in 2019. Its specifications are summarized    To peristaltic\nin Table 1. The integrated quadrupole component 𝐵2 is 2.2               pump\ntimes less than the full-size final magnet of length  0.7 m  From peristaltic                                    Vacuum\n(initially 1.2 m-long but recently adjusted in the project base-         pump                                  reservoir\nline). The magnet is wound with 8 individually insulated        Water cooling\nsuperconducting wires. The wires are then connected in                circuit                Copper heat   Wax reservoir\nseries in a joint box positioned at one end of the magnet.                                 exchanger plate   (now empty)\n       Superconducting magnets need impregnation for better   To external wax\nstrand-to-strand thermal management and better mechanical           reservoir\nintegrity. This consists of filling the gaps between windings        Jointbox\nwith an electrically insulating material, improving the overall\nthermal conductivity of the pack, and better distributing the    Feedthroughs\nstress across it. Traditional epoxy-based impregnation often     Internal wax\nexhibits a training phenomenon, requiring multiple cycles           reservoir  Copper heat\nbefore optimal performance. Recent studies demonstrate                     exchanger shaft\nthat paraffin wax impregnation eliminates this issue [3–5],      Figure 1: Wax impregnation station inside an oven (top);\nsolving a bothersome problem of superconducting magnets.         Cross-section view of the top part of the magnet mounted\nHere, we describe a dedicated impregnation setup developed       within the set-up (bottom).\nfor this purpose. Magnetic measurements of the demon-",
+      "md": "# THE FIRST SUPERCONDUCTING FINAL FOCUS QUADRUPOLE PROTOTYPE OF THE FCC-ee STUDY\n\nA. Thabuis, M. Koratzinos, G. Kirby, M. Liebsch, C. Petrone\nEuropean Organization for Nuclear Research (CERN), Geneva, Switzerland\n\n## Abstract\n\nA single aperture Canted-Cosine-Theta (CCT) quadrupole magnet, made of NbTi superconductors, has been developed for the final focus region of the FCC-ee study. The conductor layout is optimised to mitigate edge effects on one of the two sides of the magnet that typically lead to undesired higher-order multipoles. Experimental results of a prototype, including paraffin wax impregnation and cryogenic temperature measurements, are presented. The magnet exhibits no training behaviour, surpassing the nominal current during the initial ramp. Field quality is excellent, with higher-order multipoles below 1 × 10^-4 units, consistent with simulations and room temperature tests. These findings confirm the potential of superconducting CCT magnets to offer compact solutions for applications demanding stringent field quality.\n\n## INTRODUCTION\n\nThe Future Circular Collider (FCC) study plans on building a Higgs and electroweak factory through collisions of positrons and electrons (FCC-ee) [1]. Once these particles have been accelerated to their desired energy, strong so-called final focus quadrupole magnets, focus the two individual beams around the so-called interaction region where collisions occur.\n\nA Canted-Cosine-Theta (CCT) magnet topology has been proposed for the realization of the final-focus quadrupole, following a similar work done at CERN [2]. The conductor layout has been designed such that the edge effects are reduced on one side and kept unchanged on the other side for comparison. A prototype of shorter axial length was designed and built in 2019. Its specifications are summarized in Table 1. The integrated quadrupole component B2 is 2.2 times less than the full-size final magnet of length 0.7 m (initially 1.2 m-long but recently adjusted in the project baseline). The magnet is wound with 8 individually insulated superconducting wires. The wires are then connected in series in a joint box positioned at one end of the magnet.\n\nSuperconducting magnets need impregnation for better strand-to-strand thermal management and better mechanical integrity. This consists of filling the gaps between windings with an electrically insulating material, improving the overall thermal conductivity of the pack, and better distributing the stress across it. Traditional epoxy-based impregnation often exhibits a training phenomenon, requiring multiple cycles before optimal performance. Recent studies demonstrate that paraffin wax impregnation eliminates this issue [3–5], solving a bothersome problem of superconducting magnets. Here, we describe a dedicated impregnation setup developed for this purpose. Magnetic measurements of the demonstrator were initially conducted at room temperature (i.e. warm) [6] and are now presented at cryogenic temperatures (i.e. cold) to assess superconducting magnet performance accurately. The cold tests were conducted in Nov. 2023.\n\n## WAX IMPREGNATION\n\nThe magnet impregnation process involves injecting hot melted wax into the empty gaps between windings, which then solidifies to ensure mechanical integrity. Paraffin wax undergoes a liquid-solid phase transition at around 55 °C, contracting by approximately 15% upon solidification. To\n\n| Parameter         | Value                     | Parameter          | Value     |\n| ----------------- | ------------------------- | ------------------ | --------- |\n| Aperture ⌀        | 40 mm                     | Inductance         | 6.3 mH    |\n| 𝑙𝑧              | 430 mm                    | Joint R @600 A     | 130 nΩ    |\n| Conductor         | NbTi                      | 𝐼nom per wire     | 764.5 A   |\n| Winding pack      | 8 wires                   | 𝐽𝑒               | 728 A/mm² |\n| Wire type         | LHC cable polyimid insul. | peak 𝐵            | 2.95 T    |\n| Wire ⌀ w/ insul.  | 0.970 mm                  | peak 𝛁 𝐵 ⋆       | 100 T/m   |\n| Wire ⌀ w/o insul. | 0.825 mm                  | ∫ 𝐵² 𝑑𝑧 at r=𝑟 | 0.315 T.m |\n| s/c to Cu ratio   | 0.526                     | 𝑇nom              | 1.9 K     |\n| 𝑙conductor       | 276 m                     | 𝑇margin           | 2.5 K     |\n\nFigure 1: Wax impregnation station inside an oven (top); Cross-section view of the top part of the magnet mounted within the set-up (bottom).\n\n10 cm\n\nOven\n\nConnected to wax\nupper reservoir\n\nTo vacuum pump\n\nTo peristaltic\npump\n\nFrom peristaltic\npump\n\nVacuum\nreservoir\n\nWater cooling\ncircuit\n\nCopper heat\nexchanger plate\n\nWax reservoir\n(now empty)\n\nTo external wax\nreservoir\n\nJoint box\n\nFeedthroughs\n\nInternal wax\nreservoir\n\nCopper heat\nexchanger shaft",
+      "images": [
+        {
+          "name": "img_p0_1.png",
+          "height": 863,
+          "width": 816,
+          "x": 304.724,
+          "y": 443.481652,
+          "original_width": 816,
+          "original_height": 863,
+          "ocr": [
+            {
+              "x": 274,
+              "y": 20,
+              "w": 70,
+              "h": 26,
+              "confidence": 0.9994784325002722,
+              "text": "10 cm"
+            },
+            {
+              "x": 710,
+              "y": 42,
+              "w": 64,
+              "h": 26,
+              "confidence": 0.5423616588051344,
+              "text": "Oven"
+            },
+            {
+              "x": 0,
+              "y": 83,
+              "w": 198,
+              "h": 27,
+              "confidence": 0.9493178612657661,
+              "text": "Connected to wax"
+            },
+            {
+              "x": 29,
+              "y": 116,
+              "w": 171,
+              "h": 33,
+              "confidence": 0.9990442625380055,
+              "text": "upper reservoir"
+            },
+            {
+              "x": 8,
+              "y": 172,
+              "w": 190,
+              "h": 32,
+              "confidence": 0.8070532934856651,
+              "text": "To vacuum pump"
+            },
+            {
+              "x": 53,
+              "y": 221,
+              "w": 149,
+              "h": 40,
+              "confidence": 0.8847743795114267,
+              "text": "To peristaltic"
+            },
+            {
+              "x": 130,
+              "y": 264,
+              "w": 68,
+              "h": 26,
+              "confidence": 0.6553923102407765,
+              "text": "pump"
+            },
+            {
+              "x": 21,
+              "y": 308,
+              "w": 180,
+              "h": 39,
+              "confidence": 0.9997457836793865,
+              "text": "From peristaltic"
+            },
+            {
+              "x": 130,
+              "y": 352,
+              "w": 68,
+              "h": 26,
+              "confidence": 0.6553923102407765,
+              "text": "pump"
+            },
+            {
+              "x": 705,
+              "y": 343,
+              "w": 92,
+              "h": 26,
+              "confidence": 0.809229427673497,
+              "text": "Vacuum"
+            },
+            {
+              "x": 700,
+              "y": 376,
+              "w": 102,
+              "h": 26,
+              "confidence": 0.9994014003042573,
+              "text": "reservoir"
+            },
+            {
+              "x": 43,
+              "y": 397,
+              "w": 157,
+              "h": 39,
+              "confidence": 0.9978764774691398,
+              "text": "Water cooling"
+            },
+            {
+              "x": 124,
+              "y": 436,
+              "w": 76,
+              "h": 26,
+              "confidence": 0.9999630981984693,
+              "text": "circuit"
+            },
+            {
+              "x": 447,
+              "y": 437,
+              "w": 140,
+              "h": 39,
+              "confidence": 0.9999425261305764,
+              "text": "Copper heat"
+            },
+            {
+              "x": 642,
+              "y": 438,
+              "w": 156,
+              "h": 28,
+              "confidence": 0.9993705601767721,
+              "text": "Wax reservoir"
+            },
+            {
+              "x": 428,
+              "y": 468,
+              "w": 179,
+              "h": 37,
+              "confidence": 0.8273127909371139,
+              "text": "exchanger plate"
+            },
+            {
+              "x": 655,
+              "y": 470,
+              "w": 123,
+              "h": 28,
+              "confidence": 0.8633040086187926,
+              "text": "(now empty)"
+            },
+            {
+              "x": 22,
+              "y": 528,
+              "w": 176,
+              "h": 26,
+              "confidence": 0.9981666960166963,
+              "text": "To external wax"
+            },
+            {
+              "x": 96,
+              "y": 560,
+              "w": 104,
+              "h": 26,
+              "confidence": 0.9984666189903155,
+              "text": "reservoir"
+            },
+            {
+              "x": 94,
+              "y": 620,
+              "w": 58,
+              "h": 28,
+              "confidence": 0.9999660401783838,
+              "text": "Joint"
+            },
+            {
+              "x": 44,
+              "y": 683,
+              "w": 155,
+              "h": 36,
+              "confidence": 0.9999599429627161,
+              "text": "Feedthroughs"
+            },
+            {
+              "x": 58,
+              "y": 752,
+              "w": 140,
+              "h": 26,
+              "confidence": 0.8699051623513464,
+              "text": "Internal wax"
+            },
+            {
+              "x": 96,
+              "y": 784,
+              "w": 104,
+              "h": 26,
+              "confidence": 0.9995869368899162,
+              "text": "reservoir"
+            },
+            {
+              "x": 241,
+              "y": 797,
+              "w": 140,
+              "h": 40,
+              "confidence": 0.9997241127802516,
+              "text": "Copper heat"
+            },
+            {
+              "x": 202,
+              "y": 829,
+              "w": 179,
+              "h": 34,
+              "confidence": 0.9960119267486542,
+              "text": "exchanger shaft"
+            },
+            {
+              "x": 152.99099080900552,
+              "y": 617.1747742652154,
+              "w": 43.01801838198895,
+              "h": 33.650451469569134,
+              "confidence": 0.9995589103069542,
+              "text": "box"
+            }
+          ]
+        },
+        {
+          "name": "img_p0_2.png",
+          "height": 141,
+          "width": 403,
+          "x": 558.87586,
+          "y": 705.9999923706051
+        },
+        {
+          "name": "page_1.jpg",
+          "height": 792,
+          "width": 595,
+          "x": 0,
+          "y": 0,
+          "original_width": 1202,
+          "original_height": 1600,
+          "type": "full_page_screenshot"
+        },
+        {
+          "name": "page_1_text_1.jpg",
+          "height": 165.671,
+          "width": 236.094,
+          "x": 55.765,
+          "y": 154.067,
+          "original_width": 476,
+          "original_height": 334,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_text_2.jpg",
+          "height": 80.805,
+          "width": 236.288,
+          "x": 55.679,
+          "y": 352.38,
+          "original_width": 477,
+          "original_height": 163,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_text_3.jpg",
+          "height": 57.98,
+          "width": 235.44,
+          "x": 304.018,
+          "y": 219.33,
+          "original_width": 475,
+          "original_height": 117,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_text_4.jpg",
+          "height": 142.073,
+          "width": 235.642,
+          "x": 55.68,
+          "y": 592.195,
+          "original_width": 476,
+          "original_height": 287,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_text_5.jpg",
+          "height": 153.748,
+          "width": 235.908,
+          "x": 55.694,
+          "y": 436.483,
+          "original_width": 476,
+          "original_height": 310,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_text_6.jpg",
+          "height": 45.753,
+          "width": 235.96,
+          "x": 303.654,
+          "y": 137.472,
+          "original_width": 476,
+          "original_height": 92,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_table_1.jpg",
+          "height": 114.134,
+          "width": 233.342,
+          "x": 306.157,
+          "y": 315.276,
+          "original_width": 471,
+          "original_height": 230,
+          "type": "layout_table"
+        },
+        {
+          "name": "page_1_caption_1.jpg",
+          "height": 33.187,
+          "width": 235.21,
+          "x": 303.67,
+          "y": 696.915,
+          "original_width": 475,
+          "original_height": 67,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_1_sectionHeader_1.jpg",
+          "height": 9.208,
+          "width": 127.092,
+          "x": 357.689,
+          "y": 199.605,
+          "original_width": 256,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_1_caption_2.jpg",
+          "height": 10.158,
+          "width": 234.757,
+          "x": 304.113,
+          "y": 299.869,
+          "original_width": 474,
+          "original_height": 20,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_1_sectionHeader_2.jpg",
+          "height": 9.249,
+          "width": 95.837,
+          "x": 125.484,
+          "y": 333.553,
+          "original_width": 193,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_1_sectionHeader_3.jpg",
+          "height": 29.295,
+          "width": 430.705,
+          "x": 81.606,
+          "y": 54.377,
+          "original_width": 870,
+          "original_height": 59,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_1_sectionHeader_4.jpg",
+          "height": 9.107,
+          "width": 42.597,
+          "x": 54.765,
+          "y": 136.243,
+          "original_width": 86,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_1_pageHeader_1.jpg",
+          "height": 7.02,
+          "width": 198.543,
+          "x": 198.618,
+          "y": 14.599,
+          "original_width": 401,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_1_picture_1.jpg",
+          "height": 248.486,
+          "width": 233.93,
+          "x": 305.026,
+          "y": 442.948,
+          "original_width": 472,
+          "original_height": 501,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_1_pageHeader_2.jpg",
+          "height": 6.493,
+          "width": 80.5,
+          "x": 56.702,
+          "y": 27.541,
+          "original_width": 162,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_1_pageHeader_3.jpg",
+          "height": 7.052,
+          "width": 59.046,
+          "x": 478.969,
+          "y": 14.695,
+          "original_width": 119,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_1_pageHeader_4.jpg",
+          "height": 6.691,
+          "width": 133.777,
+          "x": 404.479,
+          "y": 27.681,
+          "original_width": 270,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_1_pageFooter_1.jpg",
+          "height": 7.885,
+          "width": 113.128,
+          "x": 56.055,
+          "y": 766.524,
+          "original_width": 228,
+          "original_height": 15,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_1_pageFooter_2.jpg",
+          "height": 6.591,
+          "width": 15.623,
+          "x": 522.1,
+          "y": 766.532,
+          "original_width": 31,
+          "original_height": 13,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_1_pageHeader_5.jpg",
+          "height": 618.235,
+          "width": 8.252,
+          "x": 556.225,
+          "y": 101.837,
+          "original_width": 16,
+          "original_height": 1248,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_1_text_7.jpg",
+          "height": 25.846,
+          "width": 362.544,
+          "x": 115.665,
+          "y": 98.025,
+          "original_width": 732,
+          "original_height": 52,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_1_picture_2.jpg",
+          "height": 95.596,
+          "width": 219.938,
+          "x": 310.528,
+          "y": 595.08,
+          "original_width": 444,
+          "original_height": 193,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_1_pageFooter_3.jpg",
+          "height": 6.725,
+          "width": 28.952,
+          "x": 509.141,
+          "y": 753.559,
+          "original_width": 58,
+          "original_height": 13,
+          "type": "layout_pageFooter"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "heading",
+          "lvl": 1,
+          "value": "THE FIRST SUPERCONDUCTING FINAL FOCUS QUADRUPOLE PROTOTYPE OF THE FCC-ee STUDY",
+          "md": "# THE FIRST SUPERCONDUCTING FINAL FOCUS QUADRUPOLE PROTOTYPE OF THE FCC-ee STUDY",
+          "bBox": {
+            "x": 82,
+            "y": 51.65,
+            "w": 430,
+            "h": 32
+          }
+        },
+        {
+          "type": "text",
+          "value": "A. Thabuis, M. Koratzinos, G. Kirby, M. Liebsch, C. Petrone\nEuropean Organization for Nuclear Research (CERN), Geneva, Switzerland",
+          "md": "A. Thabuis, M. Koratzinos, G. Kirby, M. Liebsch, C. Petrone\nEuropean Organization for Nuclear Research (CERN), Geneva, Switzerland",
+          "bBox": {
+            "x": 116,
+            "y": 95.04,
+            "w": 362,
+            "h": 26
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "Abstract",
+          "md": "## Abstract",
+          "bBox": {
+            "x": 56,
+            "y": 134.04,
+            "w": 40,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "A single aperture Canted-Cosine-Theta (CCT) quadrupole magnet, made of NbTi superconductors, has been developed for the final focus region of the FCC-ee study. The conductor layout is optimised to mitigate edge effects on one of the two sides of the magnet that typically lead to undesired higher-order multipoles. Experimental results of a prototype, including paraffin wax impregnation and cryogenic temperature measurements, are presented. The magnet exhibits no training behaviour, surpassing the nominal current during the initial ramp. Field quality is excellent, with higher-order multipoles below 1 × 10^-4 units, consistent with simulations and room temperature tests. These findings confirm the potential of superconducting CCT magnets to offer compact solutions for applications demanding stringent field quality.",
+          "md": "A single aperture Canted-Cosine-Theta (CCT) quadrupole magnet, made of NbTi superconductors, has been developed for the final focus region of the FCC-ee study. The conductor layout is optimised to mitigate edge effects on one of the two sides of the magnet that typically lead to undesired higher-order multipoles. Experimental results of a prototype, including paraffin wax impregnation and cryogenic temperature measurements, are presented. The magnet exhibits no training behaviour, surpassing the nominal current during the initial ramp. Field quality is excellent, with higher-order multipoles below 1 × 10^-4 units, consistent with simulations and room temperature tests. These findings confirm the potential of superconducting CCT magnets to offer compact solutions for applications demanding stringent field quality.",
+          "bBox": {
+            "x": 56,
+            "y": 152.04,
+            "w": 428,
+            "h": 195.29
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "INTRODUCTION",
+          "md": "## INTRODUCTION",
+          "bBox": {
+            "x": 125,
+            "y": 331.04,
+            "w": 95,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "The Future Circular Collider (FCC) study plans on building a Higgs and electroweak factory through collisions of positrons and electrons (FCC-ee) [1]. Once these particles have been accelerated to their desired energy, strong so-called final focus quadrupole magnets, focus the two individual beams around the so-called interaction region where collisions occur.\n\nA Canted-Cosine-Theta (CCT) magnet topology has been proposed for the realization of the final-focus quadrupole, following a similar work done at CERN [2]. The conductor layout has been designed such that the edge effects are reduced on one side and kept unchanged on the other side for comparison. A prototype of shorter axial length was designed and built in 2019. Its specifications are summarized in Table 1. The integrated quadrupole component B2 is 2.2 times less than the full-size final magnet of length 0.7 m (initially 1.2 m-long but recently adjusted in the project baseline). The magnet is wound with 8 individually insulated superconducting wires. The wires are then connected in series in a joint box positioned at one end of the magnet.\n\nSuperconducting magnets need impregnation for better strand-to-strand thermal management and better mechanical integrity. This consists of filling the gaps between windings with an electrically insulating material, improving the overall thermal conductivity of the pack, and better distributing the stress across it. Traditional epoxy-based impregnation often exhibits a training phenomenon, requiring multiple cycles before optimal performance. Recent studies demonstrate that paraffin wax impregnation eliminates this issue [3–5], solving a bothersome problem of superconducting magnets. Here, we describe a dedicated impregnation setup developed for this purpose. Magnetic measurements of the demonstrator were initially conducted at room temperature (i.e. warm) [6] and are now presented at cryogenic temperatures (i.e. cold) to assess superconducting magnet performance accurately. The cold tests were conducted in Nov. 2023.",
+          "md": "The Future Circular Collider (FCC) study plans on building a Higgs and electroweak factory through collisions of positrons and electrons (FCC-ee) [1]. Once these particles have been accelerated to their desired energy, strong so-called final focus quadrupole magnets, focus the two individual beams around the so-called interaction region where collisions occur.\n\nA Canted-Cosine-Theta (CCT) magnet topology has been proposed for the realization of the final-focus quadrupole, following a similar work done at CERN [2]. The conductor layout has been designed such that the edge effects are reduced on one side and kept unchanged on the other side for comparison. A prototype of shorter axial length was designed and built in 2019. Its specifications are summarized in Table 1. The integrated quadrupole component B2 is 2.2 times less than the full-size final magnet of length 0.7 m (initially 1.2 m-long but recently adjusted in the project baseline). The magnet is wound with 8 individually insulated superconducting wires. The wires are then connected in series in a joint box positioned at one end of the magnet.\n\nSuperconducting magnets need impregnation for better strand-to-strand thermal management and better mechanical integrity. This consists of filling the gaps between windings with an electrically insulating material, improving the overall thermal conductivity of the pack, and better distributing the stress across it. Traditional epoxy-based impregnation often exhibits a training phenomenon, requiring multiple cycles before optimal performance. Recent studies demonstrate that paraffin wax impregnation eliminates this issue [3–5], solving a bothersome problem of superconducting magnets. Here, we describe a dedicated impregnation setup developed for this purpose. Magnetic measurements of the demonstrator were initially conducted at room temperature (i.e. warm) [6] and are now presented at cryogenic temperatures (i.e. cold) to assess superconducting magnet performance accurately. The cold tests were conducted in Nov. 2023.",
+          "bBox": {
+            "x": 56,
+            "y": 136.04,
+            "w": 484,
+            "h": 584
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "WAX IMPREGNATION",
+          "md": "## WAX IMPREGNATION",
+          "bBox": {
+            "x": 357,
+            "y": 197.04,
+            "w": 127,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "The magnet impregnation process involves injecting hot melted wax into the empty gaps between windings, which then solidifies to ensure mechanical integrity. Paraffin wax undergoes a liquid-solid phase transition at around 55 °C, contracting by approximately 15% upon solidification. To",
+          "md": "The magnet impregnation process involves injecting hot melted wax into the empty gaps between windings, which then solidifies to ensure mechanical integrity. Paraffin wax undergoes a liquid-solid phase transition at around 55 °C, contracting by approximately 15% upon solidification. To",
+          "bBox": {
+            "x": 304,
+            "y": 217.04,
+            "w": 235,
+            "h": 58
+          }
+        },
+        {
+          "type": "table",
+          "rows": [
+            [],
+            [
+              "Parameter",
+              "Value",
+              "Parameter",
+              "Value"
+            ],
+            [
+              "-----------------",
+              "-------------------------",
+              "------------------",
+              "---------"
+            ],
+            [
+              "Aperture ⌀",
+              "40 mm",
+              "Inductance",
+              "6.3 mH"
+            ],
+            [
+              "𝑙𝑧",
+              "430 mm",
+              "Joint R @600 A",
+              "130 nΩ"
+            ],
+            [
+              "Conductor",
+              "NbTi",
+              "𝐼nom per wire",
+              "764.5 A"
+            ],
+            [
+              "Winding pack",
+              "8 wires",
+              "𝐽𝑒",
+              "728 A/mm²"
+            ],
+            [
+              "Wire type",
+              "LHC cable polyimid insul.",
+              "peak 𝐵",
+              "2.95 T"
+            ],
+            [
+              "Wire ⌀ w/ insul.",
+              "0.970 mm",
+              "peak 𝛁 𝐵 ⋆",
+              "100 T/m"
+            ],
+            [
+              "Wire ⌀ w/o insul.",
+              "0.825 mm",
+              "∫ 𝐵² 𝑑𝑧 at r=𝑟",
+              "0.315 T.m"
+            ],
+            [
+              "s/c to Cu ratio",
+              "0.526",
+              "𝑇nom",
+              "1.9 K"
+            ],
+            [
+              "𝑙conductor",
+              "276 m",
+              "𝑇margin",
+              "2.5 K"
+            ]
+          ],
+          "md": "The magnet impregnation process involves injecting hot melted wax into the empty gaps between windings, which then solidifies to ensure mechanical integrity. Paraffin wax undergoes a liquid-solid phase transition at around 55 °C, contracting by approximately 15% upon solidification. To\n| Parameter         | Value                     | Parameter          | Value     |\n| ----------------- | ------------------------- | ------------------ | --------- |\n| Aperture ⌀        | 40 mm                     | Inductance         | 6.3 mH    |\n| 𝑙𝑧              | 430 mm                    | Joint R @600 A     | 130 nΩ    |\n| Conductor         | NbTi                      | 𝐼nom per wire     | 764.5 A   |\n| Winding pack      | 8 wires                   | 𝐽𝑒               | 728 A/mm² |\n| Wire type         | LHC cable polyimid insul. | peak 𝐵            | 2.95 T    |\n| Wire ⌀ w/ insul.  | 0.970 mm                  | peak 𝛁 𝐵 ⋆       | 100 T/m   |\n| Wire ⌀ w/o insul. | 0.825 mm                  | ∫ 𝐵² 𝑑𝑧 at r=𝑟 | 0.315 T.m |\n| s/c to Cu ratio   | 0.526                     | 𝑇nom              | 1.9 K     |\n| 𝑙conductor       | 276 m                     | 𝑇margin           | 2.5 K     |",
+          "isPerfectTable": false,
+          "csv": "\n\"Parameter\",\"Value\",\"Parameter\",\"Value\"\n\"-----------------\",\"-------------------------\",\"------------------\",\"---------\"\n\"Aperture ⌀\",\"40 mm\",\"Inductance\",\"6.3 mH\"\n\"𝑙𝑧\",\"430 mm\",\"Joint R @600 A\",\"130 nΩ\"\n\"Conductor\",\"NbTi\",\"𝐼nom per wire\",\"764.5 A\"\n\"Winding pack\",\"8 wires\",\"𝐽𝑒\",\"728 A/mm²\"\n\"Wire type\",\"LHC cable polyimid insul.\",\"peak 𝐵\",\"2.95 T\"\n\"Wire ⌀ w/ insul.\",\"0.970 mm\",\"peak 𝛁 𝐵 ⋆\",\"100 T/m\"\n\"Wire ⌀ w/o insul.\",\"0.825 mm\",\"∫ 𝐵² 𝑑𝑧 at r=𝑟\",\"0.315 T.m\"\n\"s/c to Cu ratio\",\"0.526\",\"𝑇nom\",\"1.9 K\"\n\"𝑙conductor\",\"276 m\",\"𝑇margin\",\"2.5 K\"",
+          "bBox": {
+            "x": 56,
+            "y": 164.04,
+            "w": 474,
+            "h": 262.29
+          }
+        },
+        {
+          "type": "text",
+          "value": "Figure 1: Wax impregnation station inside an oven (top); Cross-section view of the top part of the magnet mounted within the set-up (bottom).\n\n10 cm\n\nOven\n\nConnected to wax\nupper reservoir\n\nTo vacuum pump\n\nTo peristaltic\npump\n\nFrom peristaltic\npump\n\nVacuum\nreservoir\n\nWater cooling\ncircuit\n\nCopper heat\nexchanger plate\n\nWax reservoir\n(now empty)\n\nTo external wax\nreservoir\n\nJoint box\n\nFeedthroughs\n\nInternal wax\nreservoir\n\nCopper heat\nexchanger shaft",
+          "md": "Figure 1: Wax impregnation station inside an oven (top); Cross-section view of the top part of the magnet mounted within the set-up (bottom).\n\n10 cm\n\nOven\n\nConnected to wax\nupper reservoir\n\nTo vacuum pump\n\nTo peristaltic\npump\n\nFrom peristaltic\npump\n\nVacuum\nreservoir\n\nWater cooling\ncircuit\n\nCopper heat\nexchanger plate\n\nWax reservoir\n(now empty)\n\nTo external wax\nreservoir\n\nJoint box\n\nFeedthroughs\n\nInternal wax\nreservoir\n\nCopper heat\nexchanger shaft",
+          "bBox": {
+            "x": 304,
+            "y": 197.04,
+            "w": 235,
+            "h": 531.99
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595,
+      "height": 792,
+      "triggeredAutoMode": false,
+      "parsingMode": "premium",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "confidence": 0.836,
+      "layout": [
+        {
+          "image": "page_1_text_1.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.191,
+            "w": 0.396,
+            "h": 0.211
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_2.jpg",
+          "confidence": 0.986,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.441,
+            "w": 0.397,
+            "h": 0.104
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_3.jpg",
+          "confidence": 0.985,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.274,
+            "w": 0.395,
+            "h": 0.076
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_4.jpg",
+          "confidence": 0.985,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.746,
+            "w": 0.396,
+            "h": 0.18
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_5.jpg",
+          "confidence": 0.985,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.549,
+            "w": 0.396,
+            "h": 0.195
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_6.jpg",
+          "confidence": 0.982,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.171,
+            "w": 0.396,
+            "h": 0.059
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_table_1.jpg",
+          "confidence": 0.978,
+          "label": "table",
+          "bbox": {
+            "x": 0.514,
+            "y": 0.398,
+            "w": 0.392,
+            "h": 0.144
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_caption_1.jpg",
+          "confidence": 0.968,
+          "label": "caption",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.877,
+            "w": 0.395,
+            "h": 0.044
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_sectionHeader_1.jpg",
+          "confidence": 0.948,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.601,
+            "y": 0.252,
+            "w": 0.213,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_caption_2.jpg",
+          "confidence": 0.946,
+          "label": "caption",
+          "bbox": {
+            "x": 0.511,
+            "y": 0.378,
+            "w": 0.394,
+            "h": 0.012
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_sectionHeader_2.jpg",
+          "confidence": 0.944,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.21,
+            "y": 0.421,
+            "w": 0.161,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_sectionHeader_3.jpg",
+          "confidence": 0.925,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.137,
+            "y": 0.065,
+            "w": 0.723,
+            "h": 0.04
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_sectionHeader_4.jpg",
+          "confidence": 0.907,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.092,
+            "y": 0.172,
+            "w": 0.071,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageHeader_1.jpg",
+          "confidence": 0.894,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.333,
+            "y": 0.018,
+            "w": 0.333,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_picture_1.jpg",
+          "confidence": 0.889,
+          "label": "picture",
+          "bbox": {
+            "x": 0.512,
+            "y": 0.559,
+            "w": 0.393,
+            "h": 0.313
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageHeader_2.jpg",
+          "confidence": 0.866,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.095,
+            "y": 0.034,
+            "w": 0.135,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageHeader_3.jpg",
+          "confidence": 0.85,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.804,
+            "y": 0.018,
+            "w": 0.099,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageHeader_4.jpg",
+          "confidence": 0.824,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.679,
+            "y": 0.034,
+            "w": 0.224,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageFooter_1.jpg",
+          "confidence": 0.778,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.967,
+            "w": 0.19,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageFooter_2.jpg",
+          "confidence": 0.752,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.877,
+            "y": 0.967,
+            "w": 0.026,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageHeader_5.jpg",
+          "confidence": 0.721,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.934,
+            "y": 0.128,
+            "w": 0.013,
+            "h": 0.78
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_text_7.jpg",
+          "confidence": 0.673,
+          "label": "text",
+          "bbox": {
+            "x": 0.194,
+            "y": 0.123,
+            "w": 0.609,
+            "h": 0.032
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_picture_2.jpg",
+          "confidence": 0.667,
+          "label": "picture",
+          "bbox": {
+            "x": 0.521,
+            "y": 0.751,
+            "w": 0.369,
+            "h": 0.12
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_1_pageFooter_3.jpg",
+          "confidence": 0.663,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.855,
+            "y": 0.951,
+            "w": 0.048,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "text": "    80                             Outer side - Top pos.       Critical Current Density\n                                   Outer side - Bottom pos.      Multiple taps within the joint box monitor voltage between\n\n    70                             Inner side - Top pos.       wires to detect quenches and protect the magnet by discharg-\n                                   Inner side - Bottom pos.    ing energy into a dump resistor. A 50 Ω crowbar connected\n                                   Water outlet\n    60                                                         to a 75 Ω dump resistor is employed for energy extraction.\n                                      Phase transition range   A 100 mV threshold with 10 ms validation time is used for\n    50                                                         quench detection. Inductive voltages are canceled by com-\n   Temperature [°C]                                            paring the first half of the magnet with the second half, and\n    40                                                         quarters of the magnets are also compared for redundancy\n                                                               and in the case of symmetric quenches.\n    30                                                          Various ramping tests determine the critical current of the\n        0    25     50    75   100    125   150   175   200    magnet, as illustrated in Fig. 4. Notably, no training is ob-\n                           Time [min]                          served. The short-sample critical current already measured\nFigure 2: Measured temperature at different positions across   on previous occasions is reached on the first attempt. A\nthe magnet during the wax solidification process.              margin exceeding 20% at 1.9 K is validated for the nominal\n                                                               operating current. Additional tests have been performed at\nprevent the formation of trapped empty spaces within the       4.5 K for demonstration, also reaching the short sample limit\nwinding pack, temperature gradients are applied across the     associated with this operating temperature.\nmagnet during progressive cooling, following an approach\nsimilar to Ref. [3].\n   Figure 1 shows the impregnation station and a cross-\nsection of the top part of the magnet. Internal wax reservoirs\nat the top of the magnet provide additional impregnation\nvolume to compensate for crystallization shrinkage. The\nsystem is placed within an oven to achieve the temperature\nnecessary for the wax to be melted. The magnet is air-tight\nand a weak vacuum is created within the magnet to avoid\ntrapping air bubbles which would degrade the impregnation\nquality. Wax flow is facilitated by a peristaltic pump, filling                                                     CCT\nthe magnet from the bottom. A copper shaft is inserted in-                                                          Quadrupole\nside the magnet and connected to a copper plate lying at the\nbottom of it. This induces two temperature gradients across\nthe magnet: one from the inner layer to the outer layer, and                                                         Rotating\nanother from the top to the bottom part of the magnet. A                                                            coils\nwater cooling circuit is added below the magnet enhancing\ntemperature control of the heat exchanger and accelerating     Figure 3: (Left) Inner former of the CCT magnet. Note\nwax cooling.                                                   the deviation of the first two turns from a pure sinusoidal\n   Figure 2 shows the temperature profiles measured at vari-   shape [7]. (right) Open cryostat set-up for cold measure-\nous positions across the magnet and downsampled by aver-       ments.\naging over ten points. An average 3 °C and 5 °C temperature\ndifference was observed between the inner side (in contact        1200\nwith the heat exchanger shaft) and outer side (in contact with                 5 A/s    20 A/s    100 A/s\nthe magnet housing); and between the top and bottom part          1000    5 A/s     5 A/s    80 A/s     2 A/s\nof the magnet respectively.                                        800\n\n                                                                                                             5 A/s  5 A/s\n                                                                   600\n       TESTING CAMPAIGN AT COLD                                   Current I [A]                Measured I @ 1.9K\n                                                                   400                         Short sample I @ 1.9K, 3.6T\n   Once impregnated, the magnet was tested at cryogenic            200                         NominalI @ 1.9K\ntemperatures for characterization. The prototype was placed                                    Measured I @ 4.5K\ninside a cryostat with rotating coils, as depicted on the right      00    1    2    3    4    Short sample I @ 4.5K, 2.67T\nside of Fig. 3. The cryostat is filled with helium and cooled                                  5    6    7    8     9   10\n                                                                                        Quench Number\nto 1.9 K and later to 4.5 K. The test took place in November   Figure 4: Quenching campaign of the magnet with various\n2023 at the Siegtag cryostat of the SM18 cryogenic facility    current ramping rates.\nof CERN.",
+      "md": "15th International Particle Accelerator Conference,Nashville, TN\nISSN: 978-3-95450-247-9 ISSN: 2673-5490\n\nJACoW Publishing\ndoi: 10.18429/JACoW-IPAC2024-WEPS65\n\n## Critical Current Density\n\nMultiple taps within the joint box monitor voltage between wires to detect quenches and protect the magnet by discharging energy into a dump resistor. A 50 Ω crowbar connected to a 75 Ω dump resistor is employed for energy extraction. A 100 mV threshold with 10 ms validation time is used for quench detection. Inductive voltages are canceled by comparing the first half of the magnet with the second half, and quarters of the magnets are also compared for redundancy and in the case of symmetric quenches.\n\nVarious ramping tests determine the critical current of the magnet, as illustrated in Fig. 4. Notably, no training is observed. The short-sample critical current already measured on previous occasions is reached on the first attempt. A margin exceeding 20% at 1.9 K is validated for the nominal operating current. Additional tests have been performed at 4.5 K for demonstration, also reaching the short sample limit associated with this operating temperature.\n\n| Temperature \\[°C] | Positions                      |                          |                       |                          |              |\n| ----------------- | ------------------------------ | ------------------------ | --------------------- | ------------------------ | ------------ |\n| 80                | Outer side - Top pos.          | Outer side - Bottom pos. | Inner side - Top pos. | Inner side - Bottom pos. | Water outlet |\n| 70                | Phase transition range         |                          |                       |                          |              |\n| 60                |                                |                          |                       |                          |              |\n| 50                |                                |                          |                       |                          |              |\n| 40                |                                |                          |                       |                          |              |\n| 30                |                                |                          |                       |                          |              |\n|                   | 0 25 50 75 100 125 150 175 200 |                          |                       |                          |              |\n|                   | Time \\[min]                    |                          |                       |                          |              |\n\nFigure 2: Measured temperature at different positions across the magnet during the wax solidification process.\n\nprevent the formation of trapped empty spaces within the winding pack, temperature gradients are applied across the magnet during progressive cooling, following an approach similar to Ref. [3].\n\nFigure 1 shows the impregnation station and a cross-section of the top part of the magnet. Internal wax reservoirs at the top of the magnet provide additional impregnation volume to compensate for crystallization shrinkage. The system is placed within an oven to achieve the temperature necessary for the wax to be melted. The magnet is air-tight and a weak vacuum is created within the magnet to avoid trapping air bubbles which would degrade the impregnation quality. Wax flow is facilitated by a peristaltic pump, filling the magnet from the bottom. A copper shaft is inserted inside the magnet and connected to a copper plate lying at the bottom of it. This induces two temperature gradients across the magnet: one from the inner layer to the outer layer, and another from the top to the bottom part of the magnet. A water cooling circuit is added below the magnet enhancing temperature control of the heat exchanger and accelerating wax cooling.\n\nFigure 2 shows the temperature profiles measured at various positions across the magnet and downsampled by averaging over ten points. An average 3 °C and 5 °C temperature difference was observed between the inner side (in contact with the heat exchanger shaft) and outer side (in contact with the magnet housing); and between the top and bottom part of the magnet respectively.\n\nFigure 3: (Left) Inner former of the CCT magnet. Note the deviation of the first two turns from a pure sinusoidal shape [7]. (right) Open cryostat set-up for cold measurements.\n\n## TESTING CAMPAIGN AT COLD\n\nOnce impregnated, the magnet was tested at cryogenic temperatures for characterization. The prototype was placed inside a cryostat with rotating coils, as depicted on the right side of Fig. 3. The cryostat is filled with helium and cooled to 1.9 K and later to 4.5 K. The test took place in November 2023 at the Siegtag cryostat of the SM18 cryogenic facility of CERN.\n\n| Current I \\[A] | Ramping Rates                |        |         |       |   |\n| -------------- | ---------------------------- | ------ | ------- | ----- | - |\n| 1200           | 5 A/s                        | 20 A/s | 100 A/s |       |   |\n| 1000           | 5 A/s                        | 5 A/s  | 80 A/s  | 2 A/s |   |\n| 800            |                              |        |         |       |   |\n| 600            | 5 A/s 5 A/s                  |        |         |       |   |\n| 400            | Measured I @ 1.9K            |        |         |       |   |\n| 200            | Short sample I @ 1.9K, 3.6T  |        |         |       |   |\n| 0              | Nominal I @ 1.9K             |        |         |       |   |\n|                | Measured I @ 4.5K            |        |         |       |   |\n|                | Short sample I @ 4.5K, 2.67T |        |         |       |   |\n|                | 0 1 2 3 4 5 6 7 8 9 10       |        |         |       |   |\n|                | Quench Number                |        |         |       |   |\n\nFigure 4: Quenching campaign of the magnet with various current ramping rates.\n\nWEPS65\n\nWEPS: Wednesday Poster Session: WEPS\n\n2852\n\nMC7: T10 Superconducting Magnets",
+      "images": [
+        {
+          "name": "img_p1_1.png",
+          "height": 878,
+          "width": 1057,
+          "x": 310.571,
+          "y": 295.65270000000004,
+          "original_width": 1057,
+          "original_height": 878,
+          "ocr": [
+            {
+              "x": 920,
+              "y": 554,
+              "w": 68,
+              "h": 30,
+              "confidence": 0.9999360613700429,
+              "text": "CCT"
+            },
+            {
+              "x": 872,
+              "y": 589,
+              "w": 163,
+              "h": 43,
+              "confidence": 0.9995998344601575,
+              "text": "Quadrupole"
+            },
+            {
+              "x": 891,
+              "y": 747,
+              "w": 123,
+              "h": 45,
+              "confidence": 0.999934123576984,
+              "text": "Rotating"
+            },
+            {
+              "x": 918,
+              "y": 792,
+              "w": 70,
+              "h": 32,
+              "confidence": 0.9999351723417326,
+              "text": "coils"
+            }
+          ]
+        },
+        {
+          "name": "page_2.jpg",
+          "height": 792,
+          "width": 595,
+          "x": 0,
+          "y": 0,
+          "original_width": 1202,
+          "original_height": 1600,
+          "type": "full_page_screenshot"
+        },
+        {
+          "name": "page_2_text_1.jpg",
+          "height": 94.2,
+          "width": 235.649,
+          "x": 303.719,
+          "y": 180.219,
+          "original_width": 476,
+          "original_height": 190,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_text_2.jpg",
+          "height": 81.839,
+          "width": 235.812,
+          "x": 55.754,
+          "y": 515.078,
+          "original_width": 476,
+          "original_height": 165,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_text_3.jpg",
+          "height": 201.038,
+          "width": 235.57,
+          "x": 55.662,
+          "y": 307.751,
+          "original_width": 475,
+          "original_height": 406,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_text_4.jpg",
+          "height": 79.643,
+          "width": 234.943,
+          "x": 55.881,
+          "y": 652.342,
+          "original_width": 474,
+          "original_height": 160,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_text_5.jpg",
+          "height": 105.418,
+          "width": 236.548,
+          "x": 303.591,
+          "y": 71.987,
+          "original_width": 477,
+          "original_height": 212,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_text_6.jpg",
+          "height": 45.681,
+          "width": 234.62,
+          "x": 55.993,
+          "y": 255.916,
+          "original_width": 473,
+          "original_height": 92,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_2_picture_1.jpg",
+          "height": 149.428,
+          "width": 227.347,
+          "x": 59.308,
+          "y": 55.314,
+          "original_width": 459,
+          "original_height": 301,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_2_caption_1.jpg",
+          "height": 21.642,
+          "width": 234.376,
+          "x": 303.835,
+          "y": 708.623,
+          "original_width": 473,
+          "original_height": 43,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_2_caption_2.jpg",
+          "height": 21.836,
+          "width": 234.267,
+          "x": 55.917,
+          "y": 213.892,
+          "original_width": 473,
+          "original_height": 44,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_2_caption_3.jpg",
+          "height": 43.955,
+          "width": 235.586,
+          "x": 303.769,
+          "y": 486.056,
+          "original_width": 475,
+          "original_height": 88,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_2_sectionHeader_1.jpg",
+          "height": 11.759,
+          "width": 117.079,
+          "x": 304.726,
+          "y": 53.327,
+          "original_width": 236,
+          "original_height": 23,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_2_sectionHeader_2.jpg",
+          "height": 9.35,
+          "width": 178.274,
+          "x": 84.023,
+          "y": 626.897,
+          "original_width": 360,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_2_picture_2.jpg",
+          "height": 148.48,
+          "width": 227.251,
+          "x": 307.518,
+          "y": 549.706,
+          "original_width": 459,
+          "original_height": 299,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_2_pageHeader_1.jpg",
+          "height": 6.449,
+          "width": 80.47,
+          "x": 56.739,
+          "y": 27.541,
+          "original_width": 162,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_pageHeader_2.jpg",
+          "height": 7.167,
+          "width": 198.587,
+          "x": 198.619,
+          "y": 14.611,
+          "original_width": 401,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_pageHeader_3.jpg",
+          "height": 7.142,
+          "width": 58.947,
+          "x": 479.051,
+          "y": 14.648,
+          "original_width": 119,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_picture_3.jpg",
+          "height": 184.613,
+          "width": 121.806,
+          "x": 411.376,
+          "y": 295.729,
+          "original_width": 246,
+          "original_height": 372,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_2_pageHeader_4.jpg",
+          "height": 6.578,
+          "width": 133.739,
+          "x": 404.502,
+          "y": 27.713,
+          "original_width": 270,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_pageFooter_1.jpg",
+          "height": 20.798,
+          "width": 135.63,
+          "x": 402.304,
+          "y": 753.616,
+          "original_width": 273,
+          "original_height": 42,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_2_picture_4.jpg",
+          "height": 186.026,
+          "width": 99.303,
+          "x": 310.246,
+          "y": 294.906,
+          "original_width": 200,
+          "original_height": 375,
+          "type": "layout_picture"
+        },
+        {
+          "name": "page_2_pageFooter_2.jpg",
+          "height": 8.038,
+          "width": 112.572,
+          "x": 425.318,
+          "y": 766.403,
+          "original_width": 227,
+          "original_height": 16,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_2_pageFooter_3.jpg",
+          "height": 6.852,
+          "width": 16.13,
+          "x": 56.383,
+          "y": 766.366,
+          "original_width": 32,
+          "original_height": 13,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_2_pageHeader_5.jpg",
+          "height": 6.528,
+          "width": 53.967,
+          "x": 270.659,
+          "y": 27.511,
+          "original_width": 109,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_pageHeader_6.jpg",
+          "height": 617.622,
+          "width": 8.443,
+          "x": 28.797,
+          "y": 103.477,
+          "original_width": 17,
+          "original_height": 1247,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_2_pageFooter_4.jpg",
+          "height": 6.26,
+          "width": 28.957,
+          "x": 56.303,
+          "y": 753.828,
+          "original_width": 58,
+          "original_height": 12,
+          "type": "layout_pageFooter"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "value": "15th International Particle Accelerator Conference,Nashville, TN\nISSN: 978-3-95450-247-9 ISSN: 2673-5490\n\nJACoW Publishing\ndoi: 10.18429/JACoW-IPAC2024-WEPS65",
+          "md": "15th International Particle Accelerator Conference,Nashville, TN\nISSN: 978-3-95450-247-9 ISSN: 2673-5490\n\nJACoW Publishing\ndoi: 10.18429/JACoW-IPAC2024-WEPS65",
+          "bBox": {
+            "x": 69,
+            "y": 133.23,
+            "w": 465,
+            "h": 556
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "Critical Current Density",
+          "md": "## Critical Current Density",
+          "bBox": {
+            "x": 304,
+            "y": 51.04,
+            "w": 117,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "Multiple taps within the joint box monitor voltage between wires to detect quenches and protect the magnet by discharging energy into a dump resistor. A 50 Ω crowbar connected to a 75 Ω dump resistor is employed for energy extraction. A 100 mV threshold with 10 ms validation time is used for quench detection. Inductive voltages are canceled by comparing the first half of the magnet with the second half, and quarters of the magnets are also compared for redundancy and in the case of symmetric quenches.\n\nVarious ramping tests determine the critical current of the magnet, as illustrated in Fig. 4. Notably, no training is observed. The short-sample critical current already measured on previous occasions is reached on the first attempt. A margin exceeding 20% at 1.9 K is validated for the nominal operating current. Additional tests have been performed at 4.5 K for demonstration, also reaching the short sample limit associated with this operating temperature.",
+          "md": "Multiple taps within the joint box monitor voltage between wires to detect quenches and protect the magnet by discharging energy into a dump resistor. A 50 Ω crowbar connected to a 75 Ω dump resistor is employed for energy extraction. A 100 mV threshold with 10 ms validation time is used for quench detection. Inductive voltages are canceled by comparing the first half of the magnet with the second half, and quarters of the magnets are also compared for redundancy and in the case of symmetric quenches.\n\nVarious ramping tests determine the critical current of the magnet, as illustrated in Fig. 4. Notably, no training is observed. The short-sample critical current already measured on previous occasions is reached on the first attempt. A margin exceeding 20% at 1.9 K is validated for the nominal operating current. Additional tests have been performed at 4.5 K for demonstration, also reaching the short sample limit associated with this operating temperature.",
+          "bBox": {
+            "x": 69,
+            "y": 70.04,
+            "w": 471,
+            "h": 619.19
+          }
+        },
+        {
+          "type": "table",
+          "rows": [
+            [],
+            [],
+            [],
+            [
+              "Temperature \\[°C]",
+              "Positions",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "-----------------",
+              "------------------------------",
+              "------------------------",
+              "---------------------",
+              "------------------------",
+              "------------"
+            ],
+            [
+              "80",
+              "Outer side - Top pos.",
+              "Outer side - Bottom pos.",
+              "Inner side - Top pos.",
+              "Inner side - Bottom pos.",
+              "Water outlet"
+            ],
+            [
+              "70",
+              "Phase transition range",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "60",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "50",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "40",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "30",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "0 25 50 75 100 125 150 175 200",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Time \\[min]",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "md": "Multiple taps within the joint box monitor voltage between wires to detect quenches and protect the magnet by discharging energy into a dump resistor. A 50 Ω crowbar connected to a 75 Ω dump resistor is employed for energy extraction. A 100 mV threshold with 10 ms validation time is used for quench detection. Inductive voltages are canceled by comparing the first half of the magnet with the second half, and quarters of the magnets are also compared for redundancy and in the case of symmetric quenches.\nVarious ramping tests determine the critical current of the magnet, as illustrated in Fig. 4. Notably, no training is observed. The short-sample critical current already measured on previous occasions is reached on the first attempt. A margin exceeding 20% at 1.9 K is validated for the nominal operating current. Additional tests have been performed at 4.5 K for demonstration, also reaching the short sample limit associated with this operating temperature.\n\n| Temperature \\[°C] | Positions                      |                          |                       |                          |              |\n| ----------------- | ------------------------------ | ------------------------ | --------------------- | ------------------------ | ------------ |\n| 80                | Outer side - Top pos.          | Outer side - Bottom pos. | Inner side - Top pos. | Inner side - Bottom pos. | Water outlet |\n| 70                | Phase transition range         |                          |                       |                          |              |\n| 60                |                                |                          |                       |                          |              |\n| 50                |                                |                          |                       |                          |              |\n| 40                |                                |                          |                       |                          |              |\n| 30                |                                |                          |                       |                          |              |\n|                   | 0 25 50 75 100 125 150 175 200 |                          |                       |                          |              |\n|                   | Time \\[min]                    |                          |                       |                          |              |",
+          "isPerfectTable": false,
+          "csv": "\n\n\n\"Temperature \\[°C]\",\"Positions\",\"\",\"\",\"\",\"\"\n\"-----------------\",\"------------------------------\",\"------------------------\",\"---------------------\",\"------------------------\",\"------------\"\n\"80\",\"Outer side - Top pos.\",\"Outer side - Bottom pos.\",\"Inner side - Top pos.\",\"Inner side - Bottom pos.\",\"Water outlet\"\n\"70\",\"Phase transition range\",\"\",\"\",\"\",\"\"\n\"60\",\"\",\"\",\"\",\"\",\"\"\n\"50\",\"\",\"\",\"\",\"\",\"\"\n\"40\",\"\",\"\",\"\",\"\",\"\"\n\"30\",\"\",\"\",\"\",\"\",\"\"\n\"\",\"0 25 50 75 100 125 150 175 200\",\"\",\"\",\"\",\"\"\n\"\",\"Time \\[min]\",\"\",\"\",\"\",\"\"",
+          "bBox": {
+            "x": 56,
+            "y": 51.04,
+            "w": 484,
+            "h": 680.99
+          }
+        },
+        {
+          "type": "text",
+          "value": "Figure 2: Measured temperature at different positions across the magnet during the wax solidification process.\n\nprevent the formation of trapped empty spaces within the winding pack, temperature gradients are applied across the magnet during progressive cooling, following an approach similar to Ref. [3].\n\nFigure 1 shows the impregnation station and a cross-section of the top part of the magnet. Internal wax reservoirs at the top of the magnet provide additional impregnation volume to compensate for crystallization shrinkage. The system is placed within an oven to achieve the temperature necessary for the wax to be melted. The magnet is air-tight and a weak vacuum is created within the magnet to avoid trapping air bubbles which would degrade the impregnation quality. Wax flow is facilitated by a peristaltic pump, filling the magnet from the bottom. A copper shaft is inserted inside the magnet and connected to a copper plate lying at the bottom of it. This induces two temperature gradients across the magnet: one from the inner layer to the outer layer, and another from the top to the bottom part of the magnet. A water cooling circuit is added below the magnet enhancing temperature control of the heat exchanger and accelerating wax cooling.\n\nFigure 2 shows the temperature profiles measured at various positions across the magnet and downsampled by averaging over ten points. An average 3 °C and 5 °C temperature difference was observed between the inner side (in contact with the heat exchanger shaft) and outer side (in contact with the magnet housing); and between the top and bottom part of the magnet respectively.\n\nFigure 3: (Left) Inner former of the CCT magnet. Note the deviation of the first two turns from a pure sinusoidal shape [7]. (right) Open cryostat set-up for cold measurements.",
+          "md": "Figure 2: Measured temperature at different positions across the magnet during the wax solidification process.\n\nprevent the formation of trapped empty spaces within the winding pack, temperature gradients are applied across the magnet during progressive cooling, following an approach similar to Ref. [3].\n\nFigure 1 shows the impregnation station and a cross-section of the top part of the magnet. Internal wax reservoirs at the top of the magnet provide additional impregnation volume to compensate for crystallization shrinkage. The system is placed within an oven to achieve the temperature necessary for the wax to be melted. The magnet is air-tight and a weak vacuum is created within the magnet to avoid trapping air bubbles which would degrade the impregnation quality. Wax flow is facilitated by a peristaltic pump, filling the magnet from the bottom. A copper shaft is inserted inside the magnet and connected to a copper plate lying at the bottom of it. This induces two temperature gradients across the magnet: one from the inner layer to the outer layer, and another from the top to the bottom part of the magnet. A water cooling circuit is added below the magnet enhancing temperature control of the heat exchanger and accelerating wax cooling.\n\nFigure 2 shows the temperature profiles measured at various positions across the magnet and downsampled by averaging over ten points. An average 3 °C and 5 °C temperature difference was observed between the inner side (in contact with the heat exchanger shaft) and outer side (in contact with the magnet housing); and between the top and bottom part of the magnet respectively.\n\nFigure 3: (Left) Inner former of the CCT magnet. Note the deviation of the first two turns from a pure sinusoidal shape [7]. (right) Open cryostat set-up for cold measurements.",
+          "bBox": {
+            "x": 56,
+            "y": 212.04,
+            "w": 482,
+            "h": 477.19
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "TESTING CAMPAIGN AT COLD",
+          "md": "## TESTING CAMPAIGN AT COLD",
+          "bBox": {
+            "x": 84,
+            "y": 624.04,
+            "w": 178,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "Once impregnated, the magnet was tested at cryogenic temperatures for characterization. The prototype was placed inside a cryostat with rotating coils, as depicted on the right side of Fig. 3. The cryostat is filled with helium and cooled to 1.9 K and later to 4.5 K. The test took place in November 2023 at the Siegtag cryostat of the SM18 cryogenic facility of CERN.",
+          "md": "Once impregnated, the magnet was tested at cryogenic temperatures for characterization. The prototype was placed inside a cryostat with rotating coils, as depicted on the right side of Fig. 3. The cryostat is filled with helium and cooled to 1.9 K and later to 4.5 K. The test took place in November 2023 at the Siegtag cryostat of the SM18 cryogenic facility of CERN.",
+          "bBox": {
+            "x": 56,
+            "y": 189.23,
+            "w": 468,
+            "h": 542.81
+          }
+        },
+        {
+          "type": "table",
+          "rows": [
+            [],
+            [
+              "Current I \\[A]",
+              "Ramping Rates",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "--------------",
+              "----------------------------",
+              "------",
+              "-------",
+              "-----",
+              "-"
+            ],
+            [
+              "1200",
+              "5 A/s",
+              "20 A/s",
+              "100 A/s",
+              "",
+              ""
+            ],
+            [
+              "1000",
+              "5 A/s",
+              "5 A/s",
+              "80 A/s",
+              "2 A/s",
+              ""
+            ],
+            [
+              "800",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "600",
+              "5 A/s 5 A/s",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "400",
+              "Measured I @ 1.9K",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "200",
+              "Short sample I @ 1.9K, 3.6T",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "0",
+              "Nominal I @ 1.9K",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Measured I @ 4.5K",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Short sample I @ 4.5K, 2.67T",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "0 1 2 3 4 5 6 7 8 9 10",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Quench Number",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "md": "Once impregnated, the magnet was tested at cryogenic temperatures for characterization. The prototype was placed inside a cryostat with rotating coils, as depicted on the right side of Fig. 3. The cryostat is filled with helium and cooled to 1.9 K and later to 4.5 K. The test took place in November 2023 at the Siegtag cryostat of the SM18 cryogenic facility of CERN.\n| Current I \\[A] | Ramping Rates                |        |         |       |   |\n| -------------- | ---------------------------- | ------ | ------- | ----- | - |\n| 1200           | 5 A/s                        | 20 A/s | 100 A/s |       |   |\n| 1000           | 5 A/s                        | 5 A/s  | 80 A/s  | 2 A/s |   |\n| 800            |                              |        |         |       |   |\n| 600            | 5 A/s 5 A/s                  |        |         |       |   |\n| 400            | Measured I @ 1.9K            |        |         |       |   |\n| 200            | Short sample I @ 1.9K, 3.6T  |        |         |       |   |\n| 0              | Nominal I @ 1.9K             |        |         |       |   |\n|                | Measured I @ 4.5K            |        |         |       |   |\n|                | Short sample I @ 4.5K, 2.67T |        |         |       |   |\n|                | 0 1 2 3 4 5 6 7 8 9 10       |        |         |       |   |\n|                | Quench Number                |        |         |       |   |",
+          "isPerfectTable": false,
+          "csv": "\n\"Current I \\[A]\",\"Ramping Rates\",\"\",\"\",\"\",\"\"\n\"--------------\",\"----------------------------\",\"------\",\"-------\",\"-----\",\"-\"\n\"1200\",\"5 A/s\",\"20 A/s\",\"100 A/s\",\"\",\"\"\n\"1000\",\"5 A/s\",\"5 A/s\",\"80 A/s\",\"2 A/s\",\"\"\n\"800\",\"\",\"\",\"\",\"\",\"\"\n\"600\",\"5 A/s 5 A/s\",\"\",\"\",\"\",\"\"\n\"400\",\"Measured I @ 1.9K\",\"\",\"\",\"\",\"\"\n\"200\",\"Short sample I @ 1.9K, 3.6T\",\"\",\"\",\"\",\"\"\n\"0\",\"Nominal I @ 1.9K\",\"\",\"\",\"\",\"\"\n\"\",\"Measured I @ 4.5K\",\"\",\"\",\"\",\"\"\n\"\",\"Short sample I @ 4.5K, 2.67T\",\"\",\"\",\"\",\"\"\n\"\",\"0 1 2 3 4 5 6 7 8 9 10\",\"\",\"\",\"\",\"\"\n\"\",\"Quench Number\",\"\",\"\",\"\",\"\"",
+          "bBox": {
+            "x": 56,
+            "y": 51.04,
+            "w": 484,
+            "h": 680.99
+          }
+        },
+        {
+          "type": "text",
+          "value": "Figure 4: Quenching campaign of the magnet with various current ramping rates.\n\nWEPS65\n\nWEPS: Wednesday Poster Session: WEPS\n\n2852\n\nMC7: T10 Superconducting Magnets",
+          "md": "Figure 4: Quenching campaign of the magnet with various current ramping rates.\n\nWEPS65\n\nWEPS: Wednesday Poster Session: WEPS\n\n2852\n\nMC7: T10 Superconducting Magnets",
+          "bBox": {
+            "x": 86,
+            "y": 189.23,
+            "w": 452,
+            "h": 539.81
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595,
+      "height": 792,
+      "triggeredAutoMode": false,
+      "parsingMode": "premium",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "confidence": 0.753,
+      "layout": [
+        {
+          "image": "page_2_text_1.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.224,
+            "w": 0.396,
+            "h": 0.121
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_text_2.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.647,
+            "w": 0.396,
+            "h": 0.105
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_text_3.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.386,
+            "w": 0.396,
+            "h": 0.256
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_text_4.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.82,
+            "w": 0.394,
+            "h": 0.103
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_text_5.jpg",
+          "confidence": 0.986,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.088,
+            "w": 0.397,
+            "h": 0.135
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_text_6.jpg",
+          "confidence": 0.983,
+          "label": "text",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.32,
+            "w": 0.394,
+            "h": 0.06
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_picture_1.jpg",
+          "confidence": 0.973,
+          "label": "picture",
+          "bbox": {
+            "x": 0.099,
+            "y": 0.069,
+            "w": 0.382,
+            "h": 0.188
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_caption_1.jpg",
+          "confidence": 0.97,
+          "label": "caption",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.892,
+            "w": 0.393,
+            "h": 0.029
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_caption_2.jpg",
+          "confidence": 0.967,
+          "label": "caption",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.267,
+            "w": 0.393,
+            "h": 0.029
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_caption_3.jpg",
+          "confidence": 0.959,
+          "label": "caption",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.611,
+            "w": 0.396,
+            "h": 0.058
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_sectionHeader_1.jpg",
+          "confidence": 0.956,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.512,
+            "y": 0.067,
+            "w": 0.196,
+            "h": 0.014
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_sectionHeader_2.jpg",
+          "confidence": 0.951,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.141,
+            "y": 0.791,
+            "w": 0.299,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_picture_2.jpg",
+          "confidence": 0.947,
+          "label": "picture",
+          "bbox": {
+            "x": 0.516,
+            "y": 0.694,
+            "w": 0.381,
+            "h": 0.187
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_1.jpg",
+          "confidence": 0.909,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.095,
+            "y": 0.034,
+            "w": 0.135,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_2.jpg",
+          "confidence": 0.905,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.333,
+            "y": 0.018,
+            "w": 0.333,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_3.jpg",
+          "confidence": 0.851,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.805,
+            "y": 0.018,
+            "w": 0.099,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_picture_3.jpg",
+          "confidence": 0.814,
+          "label": "picture",
+          "bbox": {
+            "x": 0.691,
+            "y": 0.373,
+            "w": 0.204,
+            "h": 0.233
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_4.jpg",
+          "confidence": 0.791,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.679,
+            "y": 0.034,
+            "w": 0.224,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageFooter_1.jpg",
+          "confidence": 0.755,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.676,
+            "y": 0.951,
+            "w": 0.227,
+            "h": 0.026
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_picture_4.jpg",
+          "confidence": 0.746,
+          "label": "picture",
+          "bbox": {
+            "x": 0.521,
+            "y": 0.372,
+            "w": 0.166,
+            "h": 0.234
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageFooter_2.jpg",
+          "confidence": 0.707,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.714,
+            "y": 0.967,
+            "w": 0.189,
+            "h": 0.01
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageFooter_3.jpg",
+          "confidence": 0.704,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.967,
+            "w": 0.027,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_5.jpg",
+          "confidence": 0.682,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.454,
+            "y": 0.034,
+            "w": 0.09,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageHeader_6.jpg",
+          "confidence": 0.663,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.048,
+            "y": 0.13,
+            "w": 0.014,
+            "h": 0.779
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_2_pageFooter_4.jpg",
+          "confidence": 0.655,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.951,
+            "w": 0.048,
+            "h": 0.007
+          },
+          "isLikelyNoise": false
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "text": "Field Quality Measurements                                        order multipole content.        This approach can also get rid\n      The field quality is determined by the normalized coeffi-   of crosstalk from the adjacent magnet in a twin aperture\ncients resulting from the Fourier analysis of the flux density    arrangement as envisaged in FCC-ee.\ndistribution across the magnet cross-section [8, Chapter 6].                                CONCLUSION\nThese coefficients are determined by inductive passive PCB\ncoils rotating around the axis inside the magnet. Three coils         This work presents the first prototype built for the final\ncover the entire axial length: one at the center for nominal      focus quadrupole of the FCC-ee study. A CCT superconduct-\nmagnetic strength characterization, and two others to inves-      ing magnet impregnated with paraffin wax is built and tested.\ntigate edge effects. A distinctive conductor layout on one        The magnet exhibits no training behavior and reaches the\nside corrects undesired higher-order multipole content. This      short-sample critical current (1000 A) for various current\nis illustrated in Fig. 3 with the grooves hosting the conduc-     rates up to 100 A/s. The field quality is excellent. Addi-\ntor diverging from the usual sinusoidal profile that leads        tionally, this prototype validates the possibility of tuning the\nto undesired edge effects. The correction is confirmed by         conductor layout of a CCT magnet to greatly reduce edge\ncomparing coefficients from the coils positioned on the cor-      effects for improved field quality. Future work will present\nrected and non-corrected sides as shown in Table 2. The           a similar approach for crosstalk compensation of a twin-\nfield quality analysis results, although worse than the warm      aperture arrangement. This will be demonstrated with a CCT\ntests, are still below 1 unit in the central region. We have      sextupole wound with High-Temperature-Superconducting\nnot repeated the extra step done at warm which reduced mul-       (HTS) tapes.\ntipole errors and consisted of rotating the magnet by about                              ACKNOWLEDGMENTS\n45∘ with respect to the measuring system (before repeating\nthe measurements) [6].                                                 We would like to acknowledge the help of Michael Daly,\n          The magnitude of undesired higher-order harmonics is    Colin Müller, and Jaap Kosse from the Paul Scherrer Insti-\nsignificantly reduced on the corrected side compared to the       tute (PSI), as well as Daniel Barna from the Wigner Research\nnon-corrected one, reaching values below 5 units (the nor-        Centre for Physics for their support with the impregnation\nmalization uses the quadrupole field of that side and not of      station.         Additionally, many thanks to the team at SM18\nthe whole magnet). One should note that when evaluating           Arnaud Devred, Gerard Willering, Jerome Feuvrier, and\nthe overall performance of the magnet, the total length would     Franco Julio Mangiarotti for their help with the cold tests.\nbe considered, resulting in a larger normalizing quadrupole       Finally, we would like to thank Austin Ball, Günther Disser-\ncomponent which mainly comes from the central part. This          tori, Markus Klute, and Maf Alidra for their invaluable help\ndilutes the contribution of the edges to the field quality of     during various stages of the project.\nthe prototype, and even more for the full-scale magnet.\n    This validates the possibility of tuning the conductor lay-                             REFERENCES\nout of CCT magnets in the edge to remove undesired higher-        [1]  A. Abada et al., “FCC-ee: The Lepton Collider”, Eur. Phys. J.\n                                                                       Spec. Top., vol. 228, pp. 261–623, 2019.\nTable 2: Comparison of the field quality between the warm         [2]  G. A. Kirbyet al., “Hi-Lumi LHC Twin Aperture Orbit Correc-\nand cold (1.9 K) measurements of the CCT quadrupole pow-               tors 0.5-m Model Magnet Development and Cold Test”, IEEE\nered with a current of 5 A and 765 A respectively.         The    [3]  Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\nnormal 𝑏𝑛 and skew 𝑎𝑛 components of different higher order         D. Barna et al., “The Superconducting Shield (SuShi) Septum\nmultipoles 𝑛  are evaluated at a 𝑅ref      = 10 mm. They are         Magnet Prototype”, IEEE Trans. Appl. Supercond., vol. 32, pp.\nexpressed in 10−4 units.                                          [4]  1–5, 2022.\n                                                                       M. Dalyet al., “Improved training in paraffin-wax impregnated\n                       𝑏𝑛                       𝑎𝑛                 Nb3Sn Rutherford cables demonstrated in BOX samples”,Sup.\n\n 𝑛  Case  Center   Non    Corrected            Non    Corrected       Sci. and Tech., vol. 35, p. 055014, 2022.\n                 Corrected    Side    Center Corrected   Side     [5]  D. M. Araujo et al., “Assessment of Training Performance,\n                    Side                        Side\n 3   Warm   0.52   −35.98     1.83    −0.35    −78.07   −2.24          Degradation and Robustness of ParaffinWax Impregnated Nb\n     Cold   0.32   −32.04     0.71     0.11    −57.36   −0.78          3 Sn Demonstrator under High Magnetic Field”, IEEE Trans.\n\n 4   Warm   0.06   11.80      3.38     0.10    −46.56   −1.15     [6]  Appl. Supercond., vol. 34, pp. 1–8, 2024.\n     Cold   0.52   13.81      3.36     0.79    −37.39   −1.44          M. Koratzinos et al., “Magnetic Measurements at Warm of the\n\n 5   Warm  −0.07   −8.66     −0.30     0.05    −5.83     0.02          First FCC-ee Final Focus Quadrupole Prototype”, presented\n     Cold  −0.18   −7.31     −0.30    −0.06    −4.13     0.18          at Proc. IPAC’21, (virtual) Campinas, Brazil, May 2021.\n\n 6   Warm  −0.00    4.44      1.02    −0.00     1.74    −0.11     [7]  M. Koratzinos et al., “A Method for Greatly Reduced Edge\n     Cold   0.79    4.11      1.22    −0.07     1.80    −0.12          Effects and Crosstalk in CCT Magnets”, IEEE Trans. Appl.\n\n 7   Warm   0.01   −1.62      0.00    −0.01    −0.79    −0.01     [8]  Supercond., vol. 28, pp. 1–5, 2018.\n     Cold   0.01   −1.47     −0.03    −0.01    −0.91     0.01          S. Russenschuck, Field Computation for Accelerator Magnets\n\n 8   Warm   0.00    0.65     −0.05     0.00     0.27    −0.02          Analytical and Numerical Methods for Electromagnetic Design\n     Cold   0.00    0.65     −0.01    −0.02     0.35    −0.04          and Optimization, Wiley‐VCH Verlag GmbH, 2010.",
+      "md": "Field Quality Measurements\n\nThe field quality is determined by the normalized coefficients resulting from the Fourier analysis of the flux density distribution across the magnet cross-section [8, Chapter 6]. These coefficients are determined by inductive passive PCB coils rotating around the axis inside the magnet. Three coils cover the entire axial length: one at the center for nominal magnetic strength characterization, and two others to investigate edge effects. A distinctive conductor layout on one side corrects undesired higher-order multipole content. This is illustrated in Fig. 3 with the grooves hosting the conductor diverging from the usual sinusoidal profile that leads to undesired edge effects. The correction is confirmed by comparing coefficients from the coils positioned on the corrected and non-corrected sides as shown in Table 2. The field quality analysis results, although worse than the warm tests, are still below 1 unit in the central region. We have not repeated the extra step done at warm which reduced multipole errors and consisted of rotating the magnet by about 45° with respect to the measuring system (before repeating the measurements) [6].\n\nThe magnitude of undesired higher-order harmonics is significantly reduced on the corrected side compared to the non-corrected one, reaching values below 5 units (the normalization uses the quadrupole field of that side and not of the whole magnet). One should note that when evaluating the overall performance of the magnet, the total length would be considered, resulting in a larger normalizing quadrupole component which mainly comes from the central part. This dilutes the contribution of the edges to the field quality of the prototype, and even more for the full-scale magnet.\n\nThis validates the possibility of tuning the conductor layout of CCT magnets in the edge to remove undesired higher-order multipole content. This approach can also get rid of crosstalk from the adjacent magnet in a twin aperture arrangement as envisaged in FCC-ee.\n\n## CONCLUSION\n\nThis work presents the first prototype built for the final focus quadrupole of the FCC-ee study. A CCT superconducting magnet impregnated with paraffin wax is built and tested. The magnet exhibits no training behavior and reaches the short-sample critical current (1000 A) for various current rates up to 100 A/s. The field quality is excellent. Additionally, this prototype validates the possibility of tuning the conductor layout of a CCT magnet to greatly reduce edge effects for improved field quality. Future work will present a similar approach for crosstalk compensation of a twin-aperture arrangement. This will be demonstrated with a CCT sextupole wound with High-Temperature-Superconducting (HTS) tapes.\n\n## ACKNOWLEDGMENTS\n\nWe would like to acknowledge the help of Michael Daly, Colin Müller, and Jaap Kosse from the Paul Scherrer Institute (PSI), as well as Daniel Barna from the Wigner Research Centre for Physics for their support with the impregnation station. Additionally, many thanks to the team at SM18 Arnaud Devred, Gerard Willering, Jerome Feuvrier, and Franco Julio Mangiarotti for their help with the cold tests. Finally, we would like to thank Austin Ball, Günther Dissertori, Markus Klute, and Maf Alidra for their invaluable help during various stages of the project.\n\n## REFERENCES\n\n[1] A. Abada et al., \"FCC-ee: The Lepton Collider\", Eur. Phys. J. Spec. Top., vol. 228, pp. 261–623, 2019.\n\n[2] G. A. Kirby et al., \"Hi-Lumi LHC Twin Aperture Orbit Correctors 0.5-m Model Magnet Development and Cold Test\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[3] D. Barna et al., \"The Superconducting Shield (SuShi) Septum Magnet Prototype\", IEEE Trans. Appl. Supercond., vol. 32, pp. 1–5, 2022.\n\n[4] M. Daly et al., \"Improved training in paraffin-wax impregnated Nb3Sn Rutherford cables demonstrated in BOX samples\", Sup. Sci. and Tech., vol. 35, p. 055014, 2022.\n\n[5] D. M. Araujo et al., \"Assessment of Training Performance, Degradation and Robustness of ParaffinWax Impregnated Nb 3 Sn Demonstrator under High Magnetic Field\", IEEE Trans. Appl. Supercond., vol. 34, pp. 1–8, 2024.\n\n[6] M. Koratzinos et al., \"Magnetic Measurements at Warm of the First FCC-ee Final Focus Quadrupole Prototype\", presented at Proc. IPAC'21, (virtual) Campinas, Brazil, May 2021.\n\n[7] M. Koratzinos et al., \"A Method for Greatly Reduced Edge Effects and Crosstalk in CCT Magnets\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[8] S. Russenschuck, Field Computation for Accelerator Magnets Analytical and Numerical Methods for Electromagnetic Design and Optimization, Wiley‐VCH Verlag GmbH, 2010.\n\n| n<br/>Center | Case<br/>Non Corrected Side | bn<br/>Corrected Side | bn<br/>Center | bn<br/>Non Corrected Side | an<br/>Corrected Side | an     | an    |\n| ------------ | --------------------------- | --------------------- | ------------- | ------------------------- | --------------------- | ------ | ----- |\n| 3            | Warm                        | 0.52                  | −35.98        | 1.83                      | −0.35                 | −78.07 | −2.24 |\n|              | Cold                        | 0.32                  | −32.04        | 0.71                      | 0.11                  | −57.36 | −0.78 |\n| 4            | Warm                        | 0.06                  | 11.80         | 3.38                      | 0.10                  | −46.56 | −1.15 |\n|              | Cold                        | 0.52                  | 13.81         | 3.36                      | 0.79                  | −37.39 | −1.44 |\n| 5            | Warm                        | −0.07                 | −8.66         | −0.30                     | 0.05                  | −5.83  | 0.02  |\n|              | Cold                        | −0.18                 | −7.31         | −0.30                     | −0.06                 | −4.13  | 0.18  |\n| 6            | Warm                        | −0.00                 | 4.44          | 1.02                      | −0.00                 | 1.74   | −0.11 |\n|              | Cold                        | 0.79                  | 4.11          | 1.22                      | −0.07                 | 1.80   | −0.12 |\n| 7            | Warm                        | 0.01                  | −1.62         | 0.00                      | −0.01                 | −0.79  | −0.01 |\n|              | Cold                        | 0.01                  | −1.47         | −0.03                     | −0.01                 | −0.91  | 0.01  |\n| 8            | Warm                        | 0.00                  | 0.65          | −0.05                     | 0.00                  | 0.27   | −0.02 |\n|              | Cold                        | 0.00                  | 0.65          | −0.01                     | −0.02                 | 0.35   | −0.04 |\n\nTable 2: Comparison of the field quality between the warm and cold (1.9 K) measurements of the CCT quadrupole powered with a current of 5 A and 765 A respectively. The normal bn and skew an components of different higher order multipoles n are evaluated at a Rref = 10 mm. They are expressed in 10−4 units.",
+      "images": [
+        {
+          "name": "page_3.jpg",
+          "height": 792,
+          "width": 595,
+          "x": 0,
+          "y": 0,
+          "original_width": 1202,
+          "original_height": 1600,
+          "type": "full_page_screenshot"
+        },
+        {
+          "name": "page_3_table_1.jpg",
+          "height": 180.841,
+          "width": 241.999,
+          "x": 55.639,
+          "y": 551.179,
+          "original_width": 488,
+          "original_height": 365,
+          "type": "layout_table"
+        },
+        {
+          "name": "page_3_text_1.jpg",
+          "height": 153.591,
+          "width": 235.817,
+          "x": 303.817,
+          "y": 117.513,
+          "original_width": 476,
+          "original_height": 310,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_text_2.jpg",
+          "height": 237.198,
+          "width": 236.057,
+          "x": 55.57,
+          "y": 71.288,
+          "original_width": 476,
+          "original_height": 479,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_text_3.jpg",
+          "height": 118.144,
+          "width": 235.293,
+          "x": 55.838,
+          "y": 311.144,
+          "original_width": 475,
+          "original_height": 238,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_text_4.jpg",
+          "height": 118.155,
+          "width": 236.377,
+          "x": 303.521,
+          "y": 299.97,
+          "original_width": 477,
+          "original_height": 238,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_text_5.jpg",
+          "height": 34.268,
+          "width": 234.528,
+          "x": 304.065,
+          "y": 54.517,
+          "original_width": 473,
+          "original_height": 69,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_listItem_1.jpg",
+          "height": 42.585,
+          "width": 235.196,
+          "x": 304.198,
+          "y": 579.107,
+          "original_width": 475,
+          "original_height": 86,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_2.jpg",
+          "height": 31.548,
+          "width": 234.591,
+          "x": 304.686,
+          "y": 543.168,
+          "original_width": 473,
+          "original_height": 63,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_3.jpg",
+          "height": 31.81,
+          "width": 233.911,
+          "x": 304.323,
+          "y": 625.809,
+          "original_width": 472,
+          "original_height": 64,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_text_6.jpg",
+          "height": 22.713,
+          "width": 236.481,
+          "x": 55.714,
+          "y": 431.405,
+          "original_width": 477,
+          "original_height": 45,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_listItem_4.jpg",
+          "height": 30.486,
+          "width": 234.931,
+          "x": 304.217,
+          "y": 507.471,
+          "original_width": 474,
+          "original_height": 61,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_5.jpg",
+          "height": 31.539,
+          "width": 234.576,
+          "x": 304.628,
+          "y": 661.984,
+          "original_width": 473,
+          "original_height": 63,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_6.jpg",
+          "height": 31.951,
+          "width": 235.176,
+          "x": 304.168,
+          "y": 471.107,
+          "original_width": 475,
+          "original_height": 64,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_7.jpg",
+          "height": 31.298,
+          "width": 234.157,
+          "x": 304.35,
+          "y": 698.117,
+          "original_width": 473,
+          "original_height": 63,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_listItem_8.jpg",
+          "height": 20.303,
+          "width": 235.185,
+          "x": 304.383,
+          "y": 446.386,
+          "original_width": 475,
+          "original_height": 41,
+          "type": "layout_listItem"
+        },
+        {
+          "name": "page_3_sectionHeader_1.jpg",
+          "height": 11.744,
+          "width": 136.67,
+          "x": 55.922,
+          "y": 53.048,
+          "original_width": 276,
+          "original_height": 23,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_3_sectionHeader_2.jpg",
+          "height": 9.455,
+          "width": 80.278,
+          "x": 381.558,
+          "y": 99.815,
+          "original_width": 162,
+          "original_height": 19,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_3_sectionHeader_3.jpg",
+          "height": 9.171,
+          "width": 131.023,
+          "x": 355.672,
+          "y": 282.446,
+          "original_width": 264,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_3_sectionHeader_4.jpg",
+          "height": 8.973,
+          "width": 80.378,
+          "x": 381.325,
+          "y": 429.401,
+          "original_width": 162,
+          "original_height": 18,
+          "type": "layout_sectionHeader"
+        },
+        {
+          "name": "page_3_pageHeader_1.jpg",
+          "height": 7.319,
+          "width": 198.595,
+          "x": 198.547,
+          "y": 14.524,
+          "original_width": 401,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_pageHeader_2.jpg",
+          "height": 7.25,
+          "width": 58.98,
+          "x": 479.02,
+          "y": 14.567,
+          "original_width": 119,
+          "original_height": 14,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_pageHeader_3.jpg",
+          "height": 6.704,
+          "width": 133.767,
+          "x": 404.44,
+          "y": 27.659,
+          "original_width": 270,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_pageHeader_4.jpg",
+          "height": 6.631,
+          "width": 80.524,
+          "x": 56.704,
+          "y": 27.439,
+          "original_width": 162,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_pageFooter_1.jpg",
+          "height": 8.001,
+          "width": 112.885,
+          "x": 56.192,
+          "y": 766.456,
+          "original_width": 228,
+          "original_height": 16,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_3_pageFooter_2.jpg",
+          "height": 6.874,
+          "width": 15.967,
+          "x": 522.143,
+          "y": 766.421,
+          "original_width": 32,
+          "original_height": 13,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_3_caption_1.jpg",
+          "height": 69.473,
+          "width": 235.544,
+          "x": 55.837,
+          "y": 475.301,
+          "original_width": 475,
+          "original_height": 140,
+          "type": "layout_caption"
+        },
+        {
+          "name": "page_3_pageHeader_5.jpg",
+          "height": 6.56,
+          "width": 53.983,
+          "x": 270.59,
+          "y": 27.483,
+          "original_width": 109,
+          "original_height": 13,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_pageHeader_6.jpg",
+          "height": 618.858,
+          "width": 8.12,
+          "x": 556.361,
+          "y": 101.984,
+          "original_width": 16,
+          "original_height": 1250,
+          "type": "layout_pageHeader"
+        },
+        {
+          "name": "page_3_text_7.jpg",
+          "height": 69.473,
+          "width": 235.544,
+          "x": 55.837,
+          "y": 475.301,
+          "original_width": 475,
+          "original_height": 140,
+          "type": "layout_text"
+        },
+        {
+          "name": "page_3_pageFooter_3.jpg",
+          "height": 6.969,
+          "width": 28.864,
+          "x": 509.162,
+          "y": 753.403,
+          "original_width": 58,
+          "original_height": 14,
+          "type": "layout_pageFooter"
+        },
+        {
+          "name": "page_3_pageFooter_4.jpg",
+          "height": 7.678,
+          "width": 135.703,
+          "x": 56.17,
+          "y": 753.707,
+          "original_width": 274,
+          "original_height": 15,
+          "type": "layout_pageFooter"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "value": "Field Quality Measurements\n\nThe field quality is determined by the normalized coefficients resulting from the Fourier analysis of the flux density distribution across the magnet cross-section [8, Chapter 6]. These coefficients are determined by inductive passive PCB coils rotating around the axis inside the magnet. Three coils cover the entire axial length: one at the center for nominal magnetic strength characterization, and two others to investigate edge effects. A distinctive conductor layout on one side corrects undesired higher-order multipole content. This is illustrated in Fig. 3 with the grooves hosting the conductor diverging from the usual sinusoidal profile that leads to undesired edge effects. The correction is confirmed by comparing coefficients from the coils positioned on the corrected and non-corrected sides as shown in Table 2. The field quality analysis results, although worse than the warm tests, are still below 1 unit in the central region. We have not repeated the extra step done at warm which reduced multipole errors and consisted of rotating the magnet by about 45° with respect to the measuring system (before repeating the measurements) [6].\n\nThe magnitude of undesired higher-order harmonics is significantly reduced on the corrected side compared to the non-corrected one, reaching values below 5 units (the normalization uses the quadrupole field of that side and not of the whole magnet). One should note that when evaluating the overall performance of the magnet, the total length would be considered, resulting in a larger normalizing quadrupole component which mainly comes from the central part. This dilutes the contribution of the edges to the field quality of the prototype, and even more for the full-scale magnet.\n\nThis validates the possibility of tuning the conductor layout of CCT magnets in the edge to remove undesired higher-order multipole content. This approach can also get rid of crosstalk from the adjacent magnet in a twin aperture arrangement as envisaged in FCC-ee.",
+          "md": "Field Quality Measurements\n\nThe field quality is determined by the normalized coefficients resulting from the Fourier analysis of the flux density distribution across the magnet cross-section [8, Chapter 6]. These coefficients are determined by inductive passive PCB coils rotating around the axis inside the magnet. Three coils cover the entire axial length: one at the center for nominal magnetic strength characterization, and two others to investigate edge effects. A distinctive conductor layout on one side corrects undesired higher-order multipole content. This is illustrated in Fig. 3 with the grooves hosting the conductor diverging from the usual sinusoidal profile that leads to undesired edge effects. The correction is confirmed by comparing coefficients from the coils positioned on the corrected and non-corrected sides as shown in Table 2. The field quality analysis results, although worse than the warm tests, are still below 1 unit in the central region. We have not repeated the extra step done at warm which reduced multipole errors and consisted of rotating the magnet by about 45° with respect to the measuring system (before repeating the measurements) [6].\n\nThe magnitude of undesired higher-order harmonics is significantly reduced on the corrected side compared to the non-corrected one, reaching values below 5 units (the normalization uses the quadrupole field of that side and not of the whole magnet). One should note that when evaluating the overall performance of the magnet, the total length would be considered, resulting in a larger normalizing quadrupole component which mainly comes from the central part. This dilutes the contribution of the edges to the field quality of the prototype, and even more for the full-scale magnet.\n\nThis validates the possibility of tuning the conductor layout of CCT magnets in the edge to remove undesired higher-order multipole content. This approach can also get rid of crosstalk from the adjacent magnet in a twin aperture arrangement as envisaged in FCC-ee.",
+          "bBox": {
+            "x": 56,
+            "y": 51.04,
+            "w": 482,
+            "h": 671.36
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "CONCLUSION",
+          "md": "## CONCLUSION",
+          "bBox": {
+            "x": 381,
+            "y": 97.04,
+            "w": 80,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "This work presents the first prototype built for the final focus quadrupole of the FCC-ee study. A CCT superconducting magnet impregnated with paraffin wax is built and tested. The magnet exhibits no training behavior and reaches the short-sample critical current (1000 A) for various current rates up to 100 A/s. The field quality is excellent. Additionally, this prototype validates the possibility of tuning the conductor layout of a CCT magnet to greatly reduce edge effects for improved field quality. Future work will present a similar approach for crosstalk compensation of a twin-aperture arrangement. This will be demonstrated with a CCT sextupole wound with High-Temperature-Superconducting (HTS) tapes.",
+          "md": "This work presents the first prototype built for the final focus quadrupole of the FCC-ee study. A CCT superconducting magnet impregnated with paraffin wax is built and tested. The magnet exhibits no training behavior and reaches the short-sample critical current (1000 A) for various current rates up to 100 A/s. The field quality is excellent. Additionally, this prototype validates the possibility of tuning the conductor layout of a CCT magnet to greatly reduce edge effects for improved field quality. Future work will present a similar approach for crosstalk compensation of a twin-aperture arrangement. This will be demonstrated with a CCT sextupole wound with High-Temperature-Superconducting (HTS) tapes.",
+          "bBox": {
+            "x": 274,
+            "y": 116.04,
+            "w": 266,
+            "h": 391
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "ACKNOWLEDGMENTS",
+          "md": "## ACKNOWLEDGMENTS",
+          "bBox": {
+            "x": 355,
+            "y": 280.04,
+            "w": 131,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "We would like to acknowledge the help of Michael Daly, Colin Müller, and Jaap Kosse from the Paul Scherrer Institute (PSI), as well as Daniel Barna from the Wigner Research Centre for Physics for their support with the impregnation station. Additionally, many thanks to the team at SM18 Arnaud Devred, Gerard Willering, Jerome Feuvrier, and Franco Julio Mangiarotti for their help with the cold tests. Finally, we would like to thank Austin Ball, Günther Dissertori, Markus Klute, and Maf Alidra for their invaluable help during various stages of the project.",
+          "md": "We would like to acknowledge the help of Michael Daly, Colin Müller, and Jaap Kosse from the Paul Scherrer Institute (PSI), as well as Daniel Barna from the Wigner Research Centre for Physics for their support with the impregnation station. Additionally, many thanks to the team at SM18 Arnaud Devred, Gerard Willering, Jerome Feuvrier, and Franco Julio Mangiarotti for their help with the cold tests. Finally, we would like to thank Austin Ball, Günther Dissertori, Markus Klute, and Maf Alidra for their invaluable help during various stages of the project.",
+          "bBox": {
+            "x": 60,
+            "y": 298.04,
+            "w": 480,
+            "h": 430.37
+          }
+        },
+        {
+          "type": "heading",
+          "lvl": 2,
+          "value": "REFERENCES",
+          "md": "## REFERENCES",
+          "bBox": {
+            "x": 381,
+            "y": 427.04,
+            "w": 80,
+            "h": 12
+          }
+        },
+        {
+          "type": "text",
+          "value": "[1] A. Abada et al., \"FCC-ee: The Lepton Collider\", Eur. Phys. J. Spec. Top., vol. 228, pp. 261–623, 2019.\n\n[2] G. A. Kirby et al., \"Hi-Lumi LHC Twin Aperture Orbit Correctors 0.5-m Model Magnet Development and Cold Test\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[3] D. Barna et al., \"The Superconducting Shield (SuShi) Septum Magnet Prototype\", IEEE Trans. Appl. Supercond., vol. 32, pp. 1–5, 2022.\n\n[4] M. Daly et al., \"Improved training in paraffin-wax impregnated Nb3Sn Rutherford cables demonstrated in BOX samples\", Sup. Sci. and Tech., vol. 35, p. 055014, 2022.\n\n[5] D. M. Araujo et al., \"Assessment of Training Performance, Degradation and Robustness of ParaffinWax Impregnated Nb 3 Sn Demonstrator under High Magnetic Field\", IEEE Trans. Appl. Supercond., vol. 34, pp. 1–8, 2024.\n\n[6] M. Koratzinos et al., \"Magnetic Measurements at Warm of the First FCC-ee Final Focus Quadrupole Prototype\", presented at Proc. IPAC'21, (virtual) Campinas, Brazil, May 2021.\n\n[7] M. Koratzinos et al., \"A Method for Greatly Reduced Edge Effects and Crosstalk in CCT Magnets\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[8] S. Russenschuck, Field Computation for Accelerator Magnets Analytical and Numerical Methods for Electromagnetic Design and Optimization, Wiley‐VCH Verlag GmbH, 2010.",
+          "md": "[1] A. Abada et al., \"FCC-ee: The Lepton Collider\", Eur. Phys. J. Spec. Top., vol. 228, pp. 261–623, 2019.\n\n[2] G. A. Kirby et al., \"Hi-Lumi LHC Twin Aperture Orbit Correctors 0.5-m Model Magnet Development and Cold Test\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[3] D. Barna et al., \"The Superconducting Shield (SuShi) Septum Magnet Prototype\", IEEE Trans. Appl. Supercond., vol. 32, pp. 1–5, 2022.\n\n[4] M. Daly et al., \"Improved training in paraffin-wax impregnated Nb3Sn Rutherford cables demonstrated in BOX samples\", Sup. Sci. and Tech., vol. 35, p. 055014, 2022.\n\n[5] D. M. Araujo et al., \"Assessment of Training Performance, Degradation and Robustness of ParaffinWax Impregnated Nb 3 Sn Demonstrator under High Magnetic Field\", IEEE Trans. Appl. Supercond., vol. 34, pp. 1–8, 2024.\n\n[6] M. Koratzinos et al., \"Magnetic Measurements at Warm of the First FCC-ee Final Focus Quadrupole Prototype\", presented at Proc. IPAC'21, (virtual) Campinas, Brazil, May 2021.\n\n[7] M. Koratzinos et al., \"A Method for Greatly Reduced Edge Effects and Crosstalk in CCT Magnets\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[8] S. Russenschuck, Field Computation for Accelerator Magnets Analytical and Numerical Methods for Electromagnetic Design and Optimization, Wiley‐VCH Verlag GmbH, 2010.",
+          "bBox": {
+            "x": 60,
+            "y": 445.03,
+            "w": 478,
+            "h": 283.37
+          }
+        },
+        {
+          "type": "table",
+          "rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              "n<br/>Center",
+              "Case<br/>Non Corrected Side",
+              "bn<br/>Corrected Side",
+              "bn<br/>Center",
+              "bn<br/>Non Corrected Side",
+              "an<br/>Corrected Side",
+              "an",
+              "an"
+            ],
+            [
+              "------------",
+              "---------------------------",
+              "---------------------",
+              "-------------",
+              "-------------------------",
+              "---------------------",
+              "------",
+              "-----"
+            ],
+            [
+              "3",
+              "Warm",
+              "0.52",
+              "−35.98",
+              "1.83",
+              "−0.35",
+              "−78.07",
+              "−2.24"
+            ],
+            [
+              "",
+              "Cold",
+              "0.32",
+              "−32.04",
+              "0.71",
+              "0.11",
+              "−57.36",
+              "−0.78"
+            ],
+            [
+              "4",
+              "Warm",
+              "0.06",
+              "11.80",
+              "3.38",
+              "0.10",
+              "−46.56",
+              "−1.15"
+            ],
+            [
+              "",
+              "Cold",
+              "0.52",
+              "13.81",
+              "3.36",
+              "0.79",
+              "−37.39",
+              "−1.44"
+            ],
+            [
+              "5",
+              "Warm",
+              "−0.07",
+              "−8.66",
+              "−0.30",
+              "0.05",
+              "−5.83",
+              "0.02"
+            ],
+            [
+              "",
+              "Cold",
+              "−0.18",
+              "−7.31",
+              "−0.30",
+              "−0.06",
+              "−4.13",
+              "0.18"
+            ],
+            [
+              "6",
+              "Warm",
+              "−0.00",
+              "4.44",
+              "1.02",
+              "−0.00",
+              "1.74",
+              "−0.11"
+            ],
+            [
+              "",
+              "Cold",
+              "0.79",
+              "4.11",
+              "1.22",
+              "−0.07",
+              "1.80",
+              "−0.12"
+            ],
+            [
+              "7",
+              "Warm",
+              "0.01",
+              "−1.62",
+              "0.00",
+              "−0.01",
+              "−0.79",
+              "−0.01"
+            ],
+            [
+              "",
+              "Cold",
+              "0.01",
+              "−1.47",
+              "−0.03",
+              "−0.01",
+              "−0.91",
+              "0.01"
+            ],
+            [
+              "8",
+              "Warm",
+              "0.00",
+              "0.65",
+              "−0.05",
+              "0.00",
+              "0.27",
+              "−0.02"
+            ],
+            [
+              "",
+              "Cold",
+              "0.00",
+              "0.65",
+              "−0.01",
+              "−0.02",
+              "0.35",
+              "−0.04"
+            ]
+          ],
+          "md": "[1] A. Abada et al., \"FCC-ee: The Lepton Collider\", Eur. Phys. J. Spec. Top., vol. 228, pp. 261–623, 2019.\n[2] G. A. Kirby et al., \"Hi-Lumi LHC Twin Aperture Orbit Correctors 0.5-m Model Magnet Development and Cold Test\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[3] D. Barna et al., \"The Superconducting Shield (SuShi) Septum Magnet Prototype\", IEEE Trans. Appl. Supercond., vol. 32, pp. 1–5, 2022.\n\n[4] M. Daly et al., \"Improved training in paraffin-wax impregnated Nb3Sn Rutherford cables demonstrated in BOX samples\", Sup. Sci. and Tech., vol. 35, p. 055014, 2022.\n\n[5] D. M. Araujo et al., \"Assessment of Training Performance, Degradation and Robustness of ParaffinWax Impregnated Nb 3 Sn Demonstrator under High Magnetic Field\", IEEE Trans. Appl. Supercond., vol. 34, pp. 1–8, 2024.\n\n[6] M. Koratzinos et al., \"Magnetic Measurements at Warm of the First FCC-ee Final Focus Quadrupole Prototype\", presented at Proc. IPAC'21, (virtual) Campinas, Brazil, May 2021.\n\n[7] M. Koratzinos et al., \"A Method for Greatly Reduced Edge Effects and Crosstalk in CCT Magnets\", IEEE Trans. Appl. Supercond., vol. 28, pp. 1–5, 2018.\n\n[8] S. Russenschuck, Field Computation for Accelerator Magnets Analytical and Numerical Methods for Electromagnetic Design and Optimization, Wiley‐VCH Verlag GmbH, 2010.\n\n| n<br/>Center | Case<br/>Non Corrected Side | bn<br/>Corrected Side | bn<br/>Center | bn<br/>Non Corrected Side | an<br/>Corrected Side | an     | an    |\n| ------------ | --------------------------- | --------------------- | ------------- | ------------------------- | --------------------- | ------ | ----- |\n| 3            | Warm                        | 0.52                  | −35.98        | 1.83                      | −0.35                 | −78.07 | −2.24 |\n|              | Cold                        | 0.32                  | −32.04        | 0.71                      | 0.11                  | −57.36 | −0.78 |\n| 4            | Warm                        | 0.06                  | 11.80         | 3.38                      | 0.10                  | −46.56 | −1.15 |\n|              | Cold                        | 0.52                  | 13.81         | 3.36                      | 0.79                  | −37.39 | −1.44 |\n| 5            | Warm                        | −0.07                 | −8.66         | −0.30                     | 0.05                  | −5.83  | 0.02  |\n|              | Cold                        | −0.18                 | −7.31         | −0.30                     | −0.06                 | −4.13  | 0.18  |\n| 6            | Warm                        | −0.00                 | 4.44          | 1.02                      | −0.00                 | 1.74   | −0.11 |\n|              | Cold                        | 0.79                  | 4.11          | 1.22                      | −0.07                 | 1.80   | −0.12 |\n| 7            | Warm                        | 0.01                  | −1.62         | 0.00                      | −0.01                 | −0.79  | −0.01 |\n|              | Cold                        | 0.01                  | −1.47         | −0.03                     | −0.01                 | −0.91  | 0.01  |\n| 8            | Warm                        | 0.00                  | 0.65          | −0.05                     | 0.00                  | 0.27   | −0.02 |\n|              | Cold                        | 0.00                  | 0.65          | −0.01                     | −0.02                 | 0.35   | −0.04 |",
+          "isPerfectTable": false,
+          "csv": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\"n<br/>Center\",\"Case<br/>Non Corrected Side\",\"bn<br/>Corrected Side\",\"bn<br/>Center\",\"bn<br/>Non Corrected Side\",\"an<br/>Corrected Side\",\"an\",\"an\"\n\"------------\",\"---------------------------\",\"---------------------\",\"-------------\",\"-------------------------\",\"---------------------\",\"------\",\"-----\"\n\"3\",\"Warm\",\"0.52\",\"−35.98\",\"1.83\",\"−0.35\",\"−78.07\",\"−2.24\"\n\"\",\"Cold\",\"0.32\",\"−32.04\",\"0.71\",\"0.11\",\"−57.36\",\"−0.78\"\n\"4\",\"Warm\",\"0.06\",\"11.80\",\"3.38\",\"0.10\",\"−46.56\",\"−1.15\"\n\"\",\"Cold\",\"0.52\",\"13.81\",\"3.36\",\"0.79\",\"−37.39\",\"−1.44\"\n\"5\",\"Warm\",\"−0.07\",\"−8.66\",\"−0.30\",\"0.05\",\"−5.83\",\"0.02\"\n\"\",\"Cold\",\"−0.18\",\"−7.31\",\"−0.30\",\"−0.06\",\"−4.13\",\"0.18\"\n\"6\",\"Warm\",\"−0.00\",\"4.44\",\"1.02\",\"−0.00\",\"1.74\",\"−0.11\"\n\"\",\"Cold\",\"0.79\",\"4.11\",\"1.22\",\"−0.07\",\"1.80\",\"−0.12\"\n\"7\",\"Warm\",\"0.01\",\"−1.62\",\"0.00\",\"−0.01\",\"−0.79\",\"−0.01\"\n\"\",\"Cold\",\"0.01\",\"−1.47\",\"−0.03\",\"−0.01\",\"−0.91\",\"0.01\"\n\"8\",\"Warm\",\"0.00\",\"0.65\",\"−0.05\",\"0.00\",\"0.27\",\"−0.02\"\n\"\",\"Cold\",\"0.00\",\"0.65\",\"−0.01\",\"−0.02\",\"0.35\",\"−0.04\"",
+          "bBox": {
+            "x": 56,
+            "y": 51.04,
+            "w": 484,
+            "h": 677.36
+          }
+        },
+        {
+          "type": "text",
+          "value": "Table 2: Comparison of the field quality between the warm and cold (1.9 K) measurements of the CCT quadrupole powered with a current of 5 A and 765 A respectively. The normal bn and skew an components of different higher order multipoles n are evaluated at a Rref = 10 mm. They are expressed in 10−4 units.",
+          "md": "Table 2: Comparison of the field quality between the warm and cold (1.9 K) measurements of the CCT quadrupole powered with a current of 5 A and 765 A respectively. The normal bn and skew an components of different higher order multipoles n are evaluated at a Rref = 10 mm. They are expressed in 10−4 units.",
+          "bBox": {
+            "x": 56,
+            "y": 473.04,
+            "w": 234,
+            "h": 255.37
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595,
+      "height": 792,
+      "triggeredAutoMode": false,
+      "parsingMode": "premium",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "confidence": 0.786,
+      "layout": [
+        {
+          "image": "page_3_table_1.jpg",
+          "confidence": 0.988,
+          "label": "table",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.695,
+            "w": 0.406,
+            "h": 0.228
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_1.jpg",
+          "confidence": 0.987,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.146,
+            "w": 0.396,
+            "h": 0.195
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_2.jpg",
+          "confidence": 0.986,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.087,
+            "w": 0.396,
+            "h": 0.302
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_3.jpg",
+          "confidence": 0.985,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.39,
+            "w": 0.396,
+            "h": 0.151
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_4.jpg",
+          "confidence": 0.985,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.376,
+            "w": 0.397,
+            "h": 0.151
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_5.jpg",
+          "confidence": 0.982,
+          "label": "text",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.066,
+            "w": 0.394,
+            "h": 0.045
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_1.jpg",
+          "confidence": 0.965,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.729,
+            "w": 0.396,
+            "h": 0.055
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_2.jpg",
+          "confidence": 0.961,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.684,
+            "w": 0.395,
+            "h": 0.041
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_3.jpg",
+          "confidence": 0.96,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.789,
+            "w": 0.393,
+            "h": 0.041
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_6.jpg",
+          "confidence": 0.96,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.542,
+            "w": 0.397,
+            "h": 0.03
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_4.jpg",
+          "confidence": 0.958,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.638,
+            "w": 0.395,
+            "h": 0.04
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_5.jpg",
+          "confidence": 0.956,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.834,
+            "w": 0.395,
+            "h": 0.041
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_6.jpg",
+          "confidence": 0.956,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.593,
+            "w": 0.395,
+            "h": 0.041
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_7.jpg",
+          "confidence": 0.946,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.88,
+            "w": 0.394,
+            "h": 0.04
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_listItem_8.jpg",
+          "confidence": 0.944,
+          "label": "listItem",
+          "bbox": {
+            "x": 0.51,
+            "y": 0.561,
+            "w": 0.395,
+            "h": 0.027
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_sectionHeader_1.jpg",
+          "confidence": 0.943,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.066,
+            "w": 0.229,
+            "h": 0.014
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_sectionHeader_2.jpg",
+          "confidence": 0.94,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.641,
+            "y": 0.126,
+            "w": 0.134,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_sectionHeader_3.jpg",
+          "confidence": 0.94,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.597,
+            "y": 0.356,
+            "w": 0.22,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_sectionHeader_4.jpg",
+          "confidence": 0.937,
+          "label": "sectionHeader",
+          "bbox": {
+            "x": 0.64,
+            "y": 0.542,
+            "w": 0.135,
+            "h": 0.011
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_1.jpg",
+          "confidence": 0.91,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.333,
+            "y": 0.018,
+            "w": 0.333,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_2.jpg",
+          "confidence": 0.86,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.805,
+            "y": 0.018,
+            "w": 0.099,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_3.jpg",
+          "confidence": 0.857,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.679,
+            "y": 0.034,
+            "w": 0.224,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_4.jpg",
+          "confidence": 0.852,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.095,
+            "y": 0.034,
+            "w": 0.135,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageFooter_1.jpg",
+          "confidence": 0.852,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.967,
+            "w": 0.189,
+            "h": 0.01
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageFooter_2.jpg",
+          "confidence": 0.762,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.877,
+            "y": 0.967,
+            "w": 0.026,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_caption_1.jpg",
+          "confidence": 0.756,
+          "label": "caption",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.597,
+            "w": 0.397,
+            "h": 0.09
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_5.jpg",
+          "confidence": 0.731,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.454,
+            "y": 0.034,
+            "w": 0.09,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageHeader_6.jpg",
+          "confidence": 0.715,
+          "label": "pageHeader",
+          "bbox": {
+            "x": 0.935,
+            "y": 0.128,
+            "w": 0.013,
+            "h": 0.781
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_text_7.jpg",
+          "confidence": 0.706,
+          "label": "text",
+          "bbox": {
+            "x": 0.093,
+            "y": 0.597,
+            "w": 0.397,
+            "h": 0.09
+          },
+          "isLikelyNoise": true
+        },
+        {
+          "image": "page_3_pageFooter_3.jpg",
+          "confidence": 0.701,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.855,
+            "y": 0.951,
+            "w": 0.048,
+            "h": 0.008
+          },
+          "isLikelyNoise": false
+        },
+        {
+          "image": "page_3_pageFooter_4.jpg",
+          "confidence": 0.693,
+          "label": "pageFooter",
+          "bbox": {
+            "x": 0.094,
+            "y": 0.951,
+            "w": 0.228,
+            "h": 0.009
+          },
+          "isLikelyNoise": false
+        }
+      ]
+    }
+  ],
+  "job_metadata": {
+    "credits_used": 16530,
+    "job_credits_usage": 0,
+    "job_pages": 0,
+    "job_auto_mode_triggered_pages": 0,
+    "job_is_cache_hit": true
+  }
+}

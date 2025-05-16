@@ -4,9 +4,12 @@ import argparse
 import pandas as pd
 import json
 import litellm
+from datasets import load_dataset
 from prompts import llm_reviewer_template, llm_judge_template
-from litellm import batch_completion
-from src import extract_response_dict, compute_all_metrics
+from litellm import batch_completion, completion
+from src import extract_response_dict, compute_all_metrics, clean_records
+from tqdm import tqdm
+# litellm._turn_on_debug()
 
 def main():
     parser = argparse.ArgumentParser(
@@ -25,12 +28,6 @@ def main():
         help='Name of the judge LLM model'
     )
     parser.add_argument(
-        '--input',
-        type=str,
-        required=True,
-        help='Path to the input Excel file'
-    )
-    parser.add_argument(
         '--output_prefix',
         type=str,
         default='results',
@@ -46,15 +43,20 @@ def main():
     args = parser.parse_args()
 
     # Set API key for OpenRouter
-    os.environ['OPENROUTER_API_KEY'] = "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"
+    os.environ['OPENROUTER_API_KEY'] = 
 
     model_name = args.model_name
     judge_name = args.judge_name
     safe_model_name = model_name.replace("/", "_").replace(".", "_")
 
     # Load original data
-    orig_df = pd.read_excel(args.input)
-    list_cols = ['categories', 'location', 'annotation']
+    orig_df = load_dataset(
+                'amphora/errata_0504_v0',
+                split='train',
+#                token=
+            ).to_pandas()
+                
+    list_cols = ['paper_category', 'error_location', 'error_annotation']
     agg_dict = {
         col: (list if col in list_cols else 'first')
         for col in orig_df.columns
@@ -69,27 +71,34 @@ def main():
     # Prepare reviewer queries
     qrys = []
     papers = []
-    for doi, paper in orig_df.groupby('doi/arxiv_id'):
-        safe_doi = str(doi).replace('/', '_')
-        path = f"data/{safe_doi}/metadata.json"
-        try:
-            with open(path, 'r') as fp:
-                data = json.load(fp)
-            qry = [
+    for _,row in flat_orig_df.iterrows():
+        qry = [
                 {'role': 'system', 'content': llm_reviewer_template},
-                {'role': 'user', 'content': data['content']},
+                {'role': 'user', 'content': clean_records(row.paper_content)}
             ]
-            qrys.append(qry)
-            papers.append(doi)
-        except FileNotFoundError:
-            print(f'{path} is missing!')
+        qrys.append(qry)
+        papers.append(row['doi/arxiv_id'])
 
     print(f"Generating responses with {model_name}")
-    responses = batch_completion(
-        model=model_name,
-        messages=qrys
-    )
+    
+    # responses = batch_completion(
+    #     model=model_name,
+    #     messages=qrys,
+    #     min_tokens=8
+    # )
+    responses = []
+    for qry in tqdm(qrys):
+        for attempt in range(1, 11):
+            try:
+                res = completion(model=model_name, messages=qry, min_tokens=8)
+                responses.append(res)
+                break
+            except Exception:
+                if attempt == 10:
+                    responses.append(None)
+                # otherwise, retry
 
+        
     parsed_results = [extract_response_dict(resp) for resp in responses]
     resp_df = pd.DataFrame({
         "doi/arxiv_id": papers,
@@ -105,7 +114,7 @@ def main():
     for _, row in error_cases.iterrows():
         annotations = [
             {"location": loc, "description": desc}
-            for loc, desc in zip(row.location, row.annotation)
+            for loc, desc in zip(row.error_location, row.error_annotation)
         ]
         predictions = row.errors
         payload = {
@@ -139,11 +148,11 @@ def main():
         })
     judge_df = pd.DataFrame.from_records(records)
     resp_df = resp_df.merge(judge_df, on="doi/arxiv_id", how="left")
-    resp_df = resp_df[[
-        'doi/arxiv_id', 'parsed', 'is_error', 'errors', 'title', 'pdf_path',
-        'categories', 'location', 'retract/errata', 'journal/category',
-        'source', 'annotation', 'matches', 'match_descriptions'
-    ]]
+    # resp_df = resp_df[[
+    #     'doi/arxiv_id', 'parsed', 'is_error', 'errors', 'title', 'pdf_path',
+    #     'categories', 'location', 'retract/errata', 'journal/category',
+    #     'source', 'annotation', 'matches', 'match_descriptions'
+    # ]]
 
     # Compute metrics
     metrics = compute_all_metrics(resp_df)
