@@ -1,4 +1,4 @@
-# AI4S R2 
+# SPOT
 
 ## Table of Contents
 1. [Annotation Platform (Streamlit)](#annotation-platform-streamlit)
