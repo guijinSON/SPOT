@@ -1,5 +1,9 @@
 # SPOT
 
+<font color="red"><b>Evaluation results—LLM generations and decisions—are available <a href="https://huggingface.co/datasets/amphora/spot-results">here</a>.</b></font>
+
+
+
 ## Table of Contents
 1. [Annotation Platform (Streamlit)](#annotation-platform-streamlit)
 2. [Processing Pipeline (OCR & Rresponse generation)](#processing-pipeline-process_paperpy)
